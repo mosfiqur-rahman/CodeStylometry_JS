@@ -1,0 +1,35 @@
+@relation code_style
+
+@attribute instanceID {application.js,classes.js,template.js}
+@attribute log(numFunctions/length) numeric
+@attribute log(numTokens/length) numeric
+@attribute log(numComments/length) numeric
+@attribute log(numLiterals/length) numeric
+@attribute log(numReservedWords/length) numeric
+@attribute avgLineLength numeric
+@attribute log(numEmptyLines/length) numeric
+@attribute whiteSpaceRatio numeric
+@attribute avgParams numeric
+@attribute stdDevLineLength numeric
+@attribute log(numMacros/length) numeric
+@attribute tabsLeadLines {TRUE, FALSE}
+@attribute log(numTabs/length) numeric
+@attribute log(numSpaces/length) numeric
+@attribute stdDevNumParams numeric
+@attribute log(numIf/length) numeric
+@attribute log(numElif/length) numeric
+@attribute log(numElse/length) numeric
+@attribute log(numSwitch/length) numeric
+@attribute log(numTernary/length) numeric
+@attribute log(numFor/length) numeric
+@attribute log(numWhile/length) numeric
+@attribute log(numDo/length) numeric
+@attribute newLineBeforeOpeningBrace {TRUE, FALSE}
+@attribute nestingDepth numeric
+@attribute branchingFactor numeric
+@attribute author {testJS}
+
+@data
+application.js,-5.236441962829949,-1.7100814382137877,-Infinity,-3.2905318137746358,-Infinity,26.0,-Infinity,31.333333333333332,0.0,4.810702354423635,-Infinity,TRUE,-Infinity,-Infinity,0.0,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,FALSE,1,NaN,testJS
+classes.js,-4.959341999708705,-1.029970355945946,-7.038783541388542,-4.399726211773283,-5.652489180268651,24.355555555555554,-5.247024072160486,4.470588235294118,0.0,20.163945332152256,-Infinity,FALSE,-Infinity,-1.6964492894237302,0.0,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-5.247024072160486,-Infinity,-Infinity,FALSE,4,1.625,testJS
+template.js,-4.713463895623359,-1.339723360194243,-6.387440329195031,-4.227956079841658,-5.694293148635086,28.733333333333334,-5.694293148635086,5.386706948640484,0.0625,26.670124775777776,-Infinity,TRUE,-2.5957034896413864,-3.358918232818049,0.24206145913796356,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,-Infinity,FALSE,9,1.25,testJS
