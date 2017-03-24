@@ -20,13 +20,12 @@ public class FeatureExtractor
 	{
 		
 		String [] JSKeywords = {	"do", "if", "in", "for", "let","new", "try", "var", "case", "else", "enum", "eval", "this", "true", "void",
-															"with", "await", "break", "catch", "class", "const", "false", "super", "throw","while", "yield", 
-															"delete", "export", "import", "public","return","static", "switch", "typeof", "default", "extends",
-															"finally","package", "private", "continue", "debugger", "function", "arguments","interface",
-															"protected", "implements", "instanceof", "await","int", "byte", "goto", "long", "final", "float",
-															"short", " double", " native", " throws", " boolean", " abstract", " volatile", " transient",
-															"synchronized", " NaN", " Infinity", " undefined"	
-														};
+				"with", "await", "break", "catch", "class", "const", "false", "super", "throw","while", "yield", 
+				"delete", "export", "import", "public","return","static", "switch", "typeof", "default", "extends",
+				"finally","package", "private", "continue", "debugger", "function", "arguments","interface",
+				"protected", "implements", "instanceof", "await","int", "byte", "goto", "long", "final", "float",
+				"short", " double", " native", " throws", " boolean", " abstract", " volatile", " transient",
+				"synchronized", " NaN", " Infinity", " undefined"	};
 		  
 		  
 					//Specifying the test arff filename
