@@ -649,6 +649,3 @@ public class FeatureCalculators {
 		}
 		return counter;
 	}
-}	
-	
-	

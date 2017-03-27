@@ -586,7 +586,7 @@ public class FeatureCalculators {
 		for (int i =0; i<symbolCount; i++)
 		{
 			//if case insensitive, make lowercase
-			//String str = APISymbols[i].toString().toLowerCase();
+			String str = APISymbols[i].toString().toLowerCase();
 			//do they ever appear withuot the paranthesis?
 			String str = ASTtypesTF[i].toString();
 			String str1 = "(" + str + ")";
@@ -595,7 +595,7 @@ public class FeatureCalculators {
 			String str4 = ")" + str + "(";
 
 			//if case insensitive, make lowercase
-			//strcounter = StringUtils.countMatches(featureText.toLowerCase(), str);
+			strcounter = StringUtils.countMatches(featureText.toLowerCase(), str);
 			counter[i] = StringUtils.countMatches(featureText, str1) 
 						+StringUtils.countMatches(featureText, str2)
 						+StringUtils.countMatches(featureText, str3)
@@ -649,6 +649,3 @@ public class FeatureCalculators {
 		}
 		return counter;
 	}
-}	
-	
-	
