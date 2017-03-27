@@ -210,37 +210,30 @@ public class FeatureCalculators {
 	}
 
 	public static float [] APISymbolTFIDF (String featureText, String datasetDir,String[] APISymbols ) throws IOException
-	{    
-		float symbolCount = APISymbols.length;
-		float[] tf = APISymbolTF(featureText, APISymbols);
+     {    
+     float symbolCount = APISymbols.length;
+	 float[] tf = APISymbolTF(featureText, APISymbols);
 
-		float idf = 0;
-		float [] counter = new float[(int) symbolCount];
+     float idf = 0;
+     float [] counter = new float[(int) symbolCount];
+     for (int i =0; i<symbolCount; i++){
+//if case insensitive, make lowercase
+//   String str = APISymbols[i].toString().toLowerCase();
+//  	 String str = "u'"+APISymbols[i].toString()+"'";
 
-		for (int i =0; i<symbolCount; i++)
-		{
-			//if case insensitive, make lowercase
-			String str = APISymbols[i].toString().toLowerCase();
-			//else			
-			//String str = "u'"+APISymbols[i].toString()+"'";
-
-			if ((tf[i] != 0) )
-			{
-				idf = APISymbolIDF(datasetDir, APISymbols[i].toString());
-			}
-			else 
-			{
-				idf =0;    		
-			}
-		    	 
-			if ((tf[i] != 0) && (idf != 0))
-				counter[i] = tf[i] * idf;
-			else
-				counter[i]=0;     
-		}
-
-		return counter;
-	}  
+     if ((tf[i] != 0) ){
+    idf = APISymbolIDF(datasetDir, APISymbols[i].toString());}
+    else 
+    {idf =0;    		 }
+    	 
+	 if ((tf[i] != 0) && (idf != 0))
+	 counter[i] = tf[i] * idf;
+	 else
+		 counter[i]=0;     
+	 }
+     return counter;
+     }  
+     
      
      //use this for dep file with label AST
      public static float [] DepASTTypeTF (String featureText, String[] ASTTypes )
