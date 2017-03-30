@@ -28,7 +28,6 @@ import weka.core.Instance;
 import weka.core.Instances;
 import weka.filters.Filter;
 import weka.filters.unsupervised.attribute.Remove;
-
 /**
  * Util has necessary functions for file processing.
  * @author Mosfiqur Rahman (mosfiqur.rahman@drexel.edu
@@ -159,9 +158,7 @@ public class Util {
 			return allWords;
     	
     }
-	
-    public static String readFile(String fileName) throws IOException 
-    {
+    public static String readFile(String fileName) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(fileName));
         try {
             StringBuilder sb = new StringBuilder();
@@ -177,9 +174,7 @@ public class Util {
             br.close();
         }
     }
-    
-	public static void writeUTF8( String allLines, String filename,boolean append)
-	{
+	public static void writeUTF8( String allLines, String filename,boolean append){
 		 
 		File file = new File(filename);
 		
@@ -202,6 +197,9 @@ public class Util {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
+		 
+		 
+		 
 	}
 	
 	public static List<String> readFileUTF8(File file, boolean readAll)
@@ -241,7 +239,8 @@ public class Util {
 				e.printStackTrace();
 			}
 			
-			return allWords;    	
+			return allWords;
+    	
     }
 
 	public static String read(File file, boolean readAll)
@@ -272,7 +271,6 @@ public class Util {
 			return output;
     	
     }
-	
     public static List <File> listTextFiles(String dirPath)
     {
 
@@ -301,11 +299,14 @@ public class Util {
 
             directories.clear();
             directories.addAll(subDirectories);
+
+
         }
 
         Collections.sort(textFiles);
         return textFiles;
-    }
+
+}
     
     public static List <File> listAllFiles(String dirPath)
     {
@@ -339,8 +340,8 @@ public class Util {
         }
         Collections.sort(textFiles);
         return textFiles;
-    }
-    
+
+}
     public static List <File> listCPPFiles(String dirPath)
     {
 
@@ -376,9 +377,9 @@ public class Util {
         }
         Collections.sort(textFiles);
         return textFiles;
+
     }
-    
-    public static List <File> listJSFiles(String dirPath)
+public static List <File> listJSFiles(String dirPath)
     {
 
         File topDir = new File(dirPath);
@@ -412,6 +413,7 @@ public class Util {
         }
         Collections.sort(textFiles);
         return textFiles;
+
     }
     
     public static List <File> listCFiles(String dirPath)
@@ -448,8 +450,7 @@ public class Util {
         Collections.sort(textFiles);
         return textFiles;
 
-    }
-    
+}
     public static List <File> listPythonFiles(String dirPath)
     {
 
@@ -484,7 +485,7 @@ public class Util {
         Collections.sort(textFiles);
         return textFiles;
 
-    }
+}
 
     public static List <File> listASTFiles(String dirPath)
     {
@@ -519,7 +520,7 @@ public class Util {
         Collections.sort(textFiles);
         return textFiles;
 
-    }
+}
     
     public static List <File> listDepFiles(String dirPath)
     {
@@ -554,9 +555,9 @@ public class Util {
         Collections.sort(textFiles);
         return textFiles;
 
-    }
-    	public static void copyFolder(File src, File dest)throws IOException
-    	{
+}
+    public static void copyFolder(File src, File dest)
+        	throws IOException{
      
         	if(src.isDirectory()){
      
@@ -600,6 +601,7 @@ public class Util {
         }
     
 
+
     	public static void AlphabeticallySortLinesOfTextInFile(String inputFile, String outputFile) throws IOException
     	{
 
@@ -626,8 +628,7 @@ public class Util {
 
     	}
     	
-    	public static void basicStats(File f)
-    	{
+    	public static void basicStats(File f){
     		Instances inst;
 			try {
 				inst = new Instances(new FileReader(f));
@@ -663,6 +664,27 @@ public class Util {
 				e.printStackTrace();
 			}
     		
-    	} 	
-	}
+    	}
+    	
+    	public static List <File> listBinaryFiles(String dirPath){
+        	
+        	Collection files = FileUtils.listFiles(
+        			new File(dirPath), 
+        			  new RegexFileFilter("^(.*?)"), 
+        			  DirectoryFileFilter.DIRECTORY
+        			);
+        	List list = new ArrayList(files);
+        	Collections.sort(list);
+        	for (int i=0; i< list.size(); i++){
+        	
+        		String ext = FilenameUtils.getExtension(list.get(i).toString());
+        		if (!ext.isEmpty()){
+        			list.remove(i);
+        			i--;}
+        	}
+
+        	return list;
+        	
+        }
+}
 

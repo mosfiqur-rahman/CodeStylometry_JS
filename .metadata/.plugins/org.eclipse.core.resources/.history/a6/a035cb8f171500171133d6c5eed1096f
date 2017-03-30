@@ -663,6 +663,31 @@ public class Util {
 				e.printStackTrace();
 			}
     		
-    	} 	
+    	}
+    	
+    	public static List <File> listBinaryFiles(String dirPath)
+    	{
+        	
+        			Collection  files = FileUtils.listFiles(
+        					new File(dirPath), 
+        					new RegexFileFilter("^(.*?)"), 
+        					DirectoryFileFilter.DIRECTORY
+        			);
+        	List list = new ArrayList(files);
+        	Collections.sort(list);
+        	for (int i=0; i< list.size(); i++)
+        	{
+        	
+        		String ext = FilenameUtils.getExtension(list.get(i).toString());
+        			if (!ext.isEmpty())
+        			{
+        				list.remove(i);
+        				i--;
+        			}
+        	}
+
+        	return list;
+        	
+        }
 	}
 
