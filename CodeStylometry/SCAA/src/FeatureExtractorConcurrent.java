@@ -220,9 +220,9 @@ public class FeatureExtractorConcurrent implements Runnable  {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
 	}
-       String[] wordUnigramsCPP = null;
+       String[] wordUnigramsJS = null;
 	try {
-		wordUnigramsCPP = FeatureCalculators.wordUnigramsCPP(test_dir);
+		wordUnigramsJS = FeatureCalculators.wordUnigramsJS(test_dir);
 	} catch (IOException e1) {
 		// TODO Auto-generated catch block
 		e1.printStackTrace();
@@ -255,9 +255,9 @@ public class FeatureExtractorConcurrent implements Runnable  {
   	  {  	ASTNodeBigrams[i] = ASTNodeBigrams[i].replace("'", "apostrophesymbol");
   	    	Util.writeFile("@attribute 'ASTNodeBigramsTF "+i+"=["+ASTNodeBigrams[i]+"]' numeric"+"\n", output_filename, true);}
       
-    	for (int i=0; i<wordUnigramsCPP.length; i++)	   	
-       {  	wordUnigramsCPP[i] = wordUnigramsCPP[i].replace("'", "apostrophesymbol");
-            	Util.writeFile("@attribute 'wordUnigramsC "+i+"=["+wordUnigramsCPP[i]+"]' numeric"+"\n", output_filename, true);}
+    	for (int i=0; i<wordUnigramsJS.length; i++)
+       {  	wordUnigramsJS[i] = wordUnigramsJS[i].replace("'", "apostrophesymbol");
+            	Util.writeFile("@attribute 'wordUnigramsJS "+i+"=["+wordUnigramsJS[i]+"]' numeric"+"\n", output_filename, true);}
 
     	  
     for (int i=0; i<ASTtypes.length; i++)	
@@ -407,7 +407,7 @@ public class FeatureExtractorConcurrent implements Runnable  {
 		{Util.writeFile(bigramCount[j] +",", output_filename, true);}	    
 		    
 	    //get count of each wordUnigram in CPP source file	 
-	    float[] wordUniCount = FeatureCalculators.WordUnigramTF(sourceCode, wordUnigramsCPP);
+	    float[] wordUniCount = FeatureCalculators.WordUnigramTF(sourceCode, wordUnigramsJS);
 	    for (int j=0; j<wordUniCount.length; j++)
 		{Util.writeFile(wordUniCount[j] +",", output_filename, true);}	
 	    
@@ -437,7 +437,7 @@ public class FeatureExtractorConcurrent implements Runnable  {
     	for(int k=0;k<depFeature.length;k++)
 		{Util.writeFile(depFeature[k] +",", output_filename, true);}	
 	    
-    	float [] cppKeywordsTF =FeatureCalculators.getCPPKeywordsTF(sourceCode);
+    	float [] cppKeywordsTF =FeatureCalculators.getJSKeywordsTF(sourceCode);
     	for(int k=0;k<cppKeywordsTF.length;k++)
 		{Util.writeFile(cppKeywordsTF[k] +",", output_filename, true);}	
     	

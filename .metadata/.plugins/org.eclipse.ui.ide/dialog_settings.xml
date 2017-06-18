@@ -3,4 +3,11 @@
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
 		<item value="/home/xps/Documents/CodeStylometry_JS/CodeStylometry"/>
 	</list>
+	<section name="NewWizardAction">
+		<item value="org.obeonetwork.dsl.uml2.design.doc.TravelAgencyWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.ui.Examples/org.obeonetwork.dsl.uml.examples.category"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
+		</list>
+	</section>
 </section>

@@ -9,6 +9,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.text.SimpleDateFormat;
 
+import org.apache.commons.io.FileUtils;
+
 /**
  * FeatureExtractor writes extracted features to arff file to be used with WEKA
  * @author Mosfiqur Rahman (mr986@drexel.edu)
@@ -20,13 +22,13 @@ public class FeatureExtractor
 	{
 		
 		String [] JSKeywords = {	"do", "if", "in", "for", "let","new", "try", "var", "case", "else", "enum", "eval", "this", "true", "void",
-															"with", "await", "break", "catch", "class", "const", "false", "super", "throw","while", "yield", 
-															"delete", "export", "import", "public","return","static", "switch", "typeof", "default", "extends",
-															"finally","package", "private", "continue", "debugger", "function", "arguments","interface",
-															"protected", "implements", "instanceof", "await","int", "byte", "goto", "long", "final", "float",
-															"short", " double", " native", " throws", " boolean", " abstract", " volatile", " transient",
-															"synchronized", " NaN", " Infinity", " undefined"	
-														};
+									"with", "await", "break", "catch", "class", "const", "false", "super", "throw","while", "yield",
+									"delete", "export", "import", "public","return","static", "switch", "typeof", "default", "extends",
+									"finally","package", "private", "continue", "debugger", "function", "arguments","interface",
+									"protected", "implements", "instanceof", "await","int", "byte", "goto", "long", "final", "float",
+									"short", " double", " native", " throws", " boolean", " abstract", " volatile", " transient",
+									"synchronized", " NaN", "Infinity", " undefined"
+								};
 		  
 		  
 					//Specifying the test arff filename
@@ -40,10 +42,16 @@ public class FeatureExtractor
 				//TO DO when time changes, output_filename changes every time which needs to be corrected
 				//String output_filename = "/home/xps/workspace/js_work/js_esprimas/" + "JS_File_"+ (month+1) + "." + dayOfMonth + "_"+ time +".arff" ;
        
-		       		for(int numberFiles=2; numberFiles<4; numberFiles++)
+		       		int numberFiles ;
+		       		for(numberFiles = 1 ; numberFiles < 2; numberFiles++)
 		       		{
-		       			String output_filename = "/home/xps/workspace/js_work/js_esprimas/"+numberFiles+".arff" ;
-		    			String test_dir = "/home/xps/workspace/js_work/js_esprima/js_dataset";
+		       			
+		       			FileUtils.write(new File( "/home/xps/Videos/7authors4file/7authors4file.arff"), "");
+		       			
+		       			String output_filename = "/home/xps/Videos/7authors4file/7authors4file.arff" ;
+		    			
+		       			
+		       			String test_dir = "/home/xps/Videos/7authors4file";
 
 
 		    			List test_file_paths = Util.listTextFiles(test_dir);
@@ -51,7 +59,7 @@ public class FeatureExtractor
 		    			String text = "";
 		    			// first specify relation
 		    			
-		    			Util.writeFile("@relation " + numberFiles + "  JS_dataset"  + numberFiles + "\n" + "\n", output_filename, true);
+		    			Util.writeFile("@relation " + numberFiles + "  JS_dataset "  + numberFiles + "\n" + "\n", output_filename, true);
 		    			Util.writeFile("@attribute instanceID {",  output_filename, true);
 		    			
 		    			List  test_JS_paths = Util.listJSFiles(test_dir);
@@ -60,11 +68,15 @@ public class FeatureExtractor
 		    				File fileJS = new File(test_JS_paths.get(j).toString());
 		    				String fileName = fileJS.getName();
 
-		    				Util.writeFile(fileName + "," , output_filename, true);
 		    				if((j+1) == test_JS_paths.size())
-		    				{
-		    					Util.writeFile("} " + "\n", output_filename, true);
+		    				{		    						  
+			    				Util.writeFile(fileName + "} " + "\n", output_filename, true);			    				
 		    				}
+		    				else
+		    				{
+		    					Util.writeFile(fileName + "," , output_filename, true);
+		    				}
+		    				
 		    			}
 
 	Util.writeFile("@attribute 'functionIDCount' numeric"+"\n", output_filename, true);
@@ -85,10 +97,10 @@ public class FeatureExtractor
     
     	//matches .dep files in test_dir for unique patterns matching regex "([\\w']+)"
        String[] ASTtypes = FeatureCalculators.uniqueDepASTTypes(test_dir);
-       //matches .cpp files for everything that appears only once (whitespace as seperator)
+       //matches .js files for everything that appears only once (whitespace as seperator)
        String[] wordUnigramsJS =FeatureCalculators.wordUnigramsJS(test_dir);
 	
-       String[] ASTNodeBigrams = BigramExtractor.getASTNodeBigrams(test_dir);
+       //String[] ASTNodeBigrams = BigramExtractor.getASTNodeBigrams(test_dir);
     	
     
        for(int i = 0 ; i < APIsymbols.length ; i++)
@@ -118,7 +130,7 @@ public class FeatureExtractor
 				Util.writeFile("@attribute 'ASTtypesTFIDF["+i+"] ' numeric" + "\n", output_filename, true);
 			}
 		}
-
+/*
 		for(int i = 0 ; i < ASTNodeBigrams.length ; i++)
 		{
 			{
@@ -126,7 +138,7 @@ public class FeatureExtractor
 						Util.writeFile("@attribute 'ASTNodeBigramsTF "+i+"=["+ASTNodeBigrams[i]+"]' numeric"+"\n", output_filename, true);
 			}
 		}
-		
+*/		
 		for(int i = 0 ; i < wordUnigramsJS.length ; i++)
 		{
 			{
@@ -162,7 +174,6 @@ public class FeatureExtractor
 		for(int i = 0 ; i < JSKeywords.length ; i++)
 		{
 			{
-						ASTtypes[i] = ASTtypes[i].replace("'", "apostrophesymbol");
 						Util.writeFile("@attribute 'JSKeyword "+i+"=["+JSKeywords[i]+"]' numeric"+"\n", output_filename, true);
 			}
 		}
@@ -282,13 +293,14 @@ public class FeatureExtractor
 		}	
 
 		//Get frequency of each ASTnodebigram in JS source file's AST	 
+		/*
 		float[] bigramCount = BigramExtractor.getASTNodeBigramsTF(DepASTText, ASTNodeBigrams );
 
 		for (int j=0; j<ASTNodeBigrams.length; j++)
 		{
 			Util.writeFile(bigramCount[j] +",", output_filename, true);
 		}	    
-    
+    	*/
 		//Get count of each wordUnigram in JS source file	 
 		float[] wordUniCount = FeatureCalculators.WordUnigramTF(sourceCode, wordUnigramsJS);
 

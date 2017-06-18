@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_scaa" default="compile.module.scaa">
+  <dirname property="module.scaa.basedir" file="${ant.file.module_scaa}"/>
+  
+  <property name="module.jdk.home.scaa" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.scaa" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.scaa" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.scaa" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="scaa.output.dir" value="${module.scaa.basedir}/../../out/production/SCAA"/>
+  <property name="scaa.testoutput.dir" value="${module.scaa.basedir}/../../out/test/SCAA"/>
+  
+  <path id="scaa.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="scaa.module.production.classpath">
+    <path refid="${module.jdk.classpath.scaa}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.runtime.production.module.classpath">
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.module.classpath">
+    <path refid="${module.jdk.classpath.scaa}"/>
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.runtime.module.classpath">
+    <pathelement location="${scaa.testoutput.dir}"/>
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.scaa">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.scaa">
+    <patternset refid="excluded.from.module.scaa"/>
+  </patternset>
+  
+  <path id="scaa.module.sourcepath">
+    <dirset dir="${module.scaa.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.scaa" depends="compile.module.scaa.production,compile.module.scaa.tests" description="Compile module SCAA"/>
+  
+  <target name="compile.module.scaa.production" depends="register.custom.compilers" description="Compile module SCAA; production classes">
+    <mkdir dir="${scaa.output.dir}"/>
+    <javac2 destdir="${scaa.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.scaa}/javac">
+      <compilerarg line="${compiler.args.scaa}"/>
+      <bootclasspath refid="scaa.module.bootclasspath"/>
+      <classpath refid="scaa.module.production.classpath"/>
+      <src refid="scaa.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.scaa"/>
+    </javac2>
+    
+    <copy todir="${scaa.output.dir}">
+      <fileset dir="${module.scaa.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.scaa.tests" depends="register.custom.compilers,compile.module.scaa.production" description="compile module SCAA; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.scaa" description="cleanup module">
+    <delete dir="${scaa.output.dir}"/>
+    <delete dir="${scaa.testoutput.dir}"/>
+  </target>
+</project>

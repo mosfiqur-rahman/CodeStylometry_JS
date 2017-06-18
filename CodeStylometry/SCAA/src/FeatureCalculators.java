@@ -637,7 +637,7 @@ public class FeatureCalculators {
 		return counter;
 	}
 
-	public static float [] InfoGainsgetJSKeywordsTF(String sourceCode, String [] JSKeywords )
+	public static float [] getInfoGainJSKeywordsTF(String sourceCode, String [] JSKeywords )
 	{		  
 		float symbolCount = JSKeywords.length;
 		float [] counter = new float[(int) symbolCount];

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="codestylometry_js" default="all">
+  
+  
+  <property file="codestylometry_js.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*.yarb/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.egg"/>
+    <include name="*.jar"/>
+    <include name="*.ear"/>
+    <include name="*.swc"/>
+    <include name="*.war"/>
+    <include name="*.ane"/>
+    <include name="*.zip"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/charsets.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/cldrdata.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/dnsns.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/icedtea-sound.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/jaccess.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/localedata.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/nashorn.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/sunec.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/sunjce_provider.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/sunpkcs11.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/ext/zipfs.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/jce.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/jsse.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/management-agent.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/resources.jar"/>
+      <include name="../java-1.8.0-openjdk-amd64/jre/lib/rt.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.scaa.classpath">
+    <pathelement location="${basedir}/CodeStylometry/SCAA/commons-exec-1.2.jar"/>
+    <pathelement location="${basedir}/CodeStylometry/SCAA/commons-lang3-3.3.2.jar"/>
+    <pathelement location="${basedir}/CodeStylometry/SCAA/commons.io_2.0.1.jar"/>
+    <pathelement location="${basedir}/CodeStylometry/SCAA/javacsv.jar"/>
+    <pathelement location="${basedir}/CodeStylometry/SCAA/weka.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module Naive Baseline -->
+  
+  <dirname property="module.naive_baseline.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.naive_baseline" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.naive_baseline" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.naive_baseline" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.naive_baseline" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="naive_baseline.output.dir" value="${module.naive_baseline.basedir}/out/production/Naive Baseline"/>
+  <property name="naive_baseline.testoutput.dir" value="${module.naive_baseline.basedir}/out/test/Naive Baseline"/>
+  
+  <path id="naive_baseline.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="naive_baseline.module.production.classpath">
+    <path refid="${module.jdk.classpath.naive_baseline}"/>
+  </path>
+  
+  <path id="naive_baseline.runtime.production.module.classpath">
+    <pathelement location="${naive_baseline.output.dir}"/>
+  </path>
+  
+  <path id="naive_baseline.module.classpath">
+    <path refid="${module.jdk.classpath.naive_baseline}"/>
+    <pathelement location="${naive_baseline.output.dir}"/>
+  </path>
+  
+  <path id="naive_baseline.runtime.module.classpath">
+    <pathelement location="${naive_baseline.testoutput.dir}"/>
+    <pathelement location="${naive_baseline.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.naive_baseline">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.naive_baseline">
+    <patternset refid="excluded.from.module.naive_baseline"/>
+  </patternset>
+  
+  <path id="naive_baseline.module.sourcepath">
+    <dirset dir="${module.naive_baseline.basedir}/CodeStylometry/Naive Baseline">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.naive_baseline" depends="compile.module.naive_baseline.production,compile.module.naive_baseline.tests" description="Compile module Naive Baseline"/>
+  
+  <target name="compile.module.naive_baseline.production" depends="register.custom.compilers" description="Compile module Naive Baseline; production classes">
+    <mkdir dir="${naive_baseline.output.dir}"/>
+    <javac2 destdir="${naive_baseline.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.naive_baseline}/javac">
+      <compilerarg line="${compiler.args.naive_baseline}"/>
+      <bootclasspath refid="naive_baseline.module.bootclasspath"/>
+      <classpath refid="naive_baseline.module.production.classpath"/>
+      <src refid="naive_baseline.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.naive_baseline"/>
+    </javac2>
+    
+    <copy todir="${naive_baseline.output.dir}">
+      <fileset dir="${module.naive_baseline.basedir}/CodeStylometry/Naive Baseline/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.naive_baseline.tests" depends="register.custom.compilers,compile.module.naive_baseline.production" description="compile module Naive Baseline; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.naive_baseline" description="cleanup module">
+    <delete dir="${naive_baseline.output.dir}"/>
+    <delete dir="${naive_baseline.testoutput.dir}"/>
+  </target>
+  
+  
+  <!-- Module SCAA -->
+  
+  <dirname property="module.scaa.basedir" file="${ant.file}"/>
+  
+  
+  <property name="module.jdk.home.scaa" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.scaa" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.scaa" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.scaa" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="scaa.output.dir" value="${module.scaa.basedir}/out/production/SCAA"/>
+  <property name="scaa.testoutput.dir" value="${module.scaa.basedir}/out/test/SCAA"/>
+  
+  <path id="scaa.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="scaa.module.production.classpath">
+    <path refid="${module.jdk.classpath.scaa}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.runtime.production.module.classpath">
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.module.classpath">
+    <path refid="${module.jdk.classpath.scaa}"/>
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  <path id="scaa.runtime.module.classpath">
+    <pathelement location="${scaa.testoutput.dir}"/>
+    <pathelement location="${scaa.output.dir}"/>
+    <path refid="library.scaa.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.scaa">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.scaa">
+    <patternset refid="excluded.from.module.scaa"/>
+  </patternset>
+  
+  <path id="scaa.module.sourcepath">
+    <dirset dir="${module.scaa.basedir}/CodeStylometry/SCAA">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.scaa" depends="compile.module.scaa.production,compile.module.scaa.tests" description="Compile module SCAA"/>
+  
+  <target name="compile.module.scaa.production" depends="register.custom.compilers" description="Compile module SCAA; production classes">
+    <mkdir dir="${scaa.output.dir}"/>
+    <javac2 destdir="${scaa.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.scaa}/javac">
+      <compilerarg line="${compiler.args.scaa}"/>
+      <bootclasspath refid="scaa.module.bootclasspath"/>
+      <classpath refid="scaa.module.production.classpath"/>
+      <src refid="scaa.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.scaa"/>
+    </javac2>
+    
+    <copy todir="${scaa.output.dir}">
+      <fileset dir="${module.scaa.basedir}/CodeStylometry/SCAA/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.scaa.tests" depends="register.custom.compilers,compile.module.scaa.production" description="compile module SCAA; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.scaa" description="cleanup module">
+    <delete dir="${scaa.output.dir}"/>
+    <delete dir="${scaa.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.naive_baseline, clean.module.scaa" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.naive_baseline, compile.module.scaa" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

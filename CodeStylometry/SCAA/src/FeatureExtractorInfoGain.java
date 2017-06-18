@@ -158,7 +158,7 @@ public class FeatureExtractorInfoGain {
     	for(int k=0;k<depFeature.length;k++)
 		{Util.writeFile(depFeature[k] +",", output_filename, true);}	
 	    
-    	float [] cppKeywordsTF =FeatureCalculators.getInfoGainCPPKeywordsTF(sourceCode, cppKeywords);
+    	float [] cppKeywordsTF =FeatureCalculators.getInfoGainJSKeywordsTF(sourceCode, cppKeywords);
     	for(int k=0;k<cppKeywordsTF.length;k++)
 		{Util.writeFile(cppKeywordsTF[k] +",", output_filename, true);}	
     	

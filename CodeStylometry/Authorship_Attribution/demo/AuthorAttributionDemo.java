@@ -1,0 +1,261 @@
+import java.io.IOException;
+
+public class AuthorAttributionDemo {
+
+	public static String helpString = 
+			"-cv \t\t\t\t\t Perform cross-validation instead of train-test\r\n" +
+			"-train {filepath} \t\t\t Indicate the path to the training data (or cross-validation data)\r\n" +
+			"-test {filepath} \t\t\t Indicate the path to the testing data (not used for cross-validation)\r\n" + 
+			"-s {number} OR -minseed {number} \t Indicate the starting (or only) random seed\r\n" +
+			"-S {number} OR -maxseed {number} \t Indicate the final (or only) random seed\r\n" + 
+			"-n {number} \t\t\t\t Indicate the number of random seeds to use (in place of min to max)\r\n" +
+			"-f {number} \t\t\t\t Indicate the number of cross-validation folds to use (if blank, use 10)\r\n" +
+			"-r {filepath} \t\t\t\t Indicate the file to which to write results (if blank, write to standard output)\r\n";
+	
+	public static void main(String args[]){
+		//String trainName = null, testName = null, resultName = null;
+		String trainName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/merged.arff",
+				testName = null, resultName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/new_result.txt";
+		boolean cv = false;
+		//int minSeed = 0, numFolds = 0, maxSeed = 0, numSeeds = 0;
+		int minSeed = 1, numFolds = 9, maxSeed = 5, numSeeds = 5;
+		AuthorAttribution aa;
+		String resultString = null;
+		String resultStringArray[] = null;
+	/**
+		if(args.length == 0){
+			System.out.println("Please enter the command line argument -h to see options.");
+			System.exit(0);
+		}
+		for(int i = 0; i < args.length; i++){
+			switch(args[i]){
+				case "-h":
+					System.out.println(helpString);
+					System.exit(0);
+					break;
+				case "-cv":
+					cv = true;
+					break;
+				case "-train":
+					trainName = args[++i];
+					break;
+				case "-test":
+					testName = args[++i];
+					break;
+				case "-s":
+				case "-minseed":
+					minSeed = Integer.parseInt(args[++i]);
+					break;
+				case "-S":
+				case "-maxseed":
+					maxSeed = Integer.parseInt(args[++i]);
+					break;
+				case "-n":
+					numSeeds = Integer.parseInt(args[++i]);
+					break;
+				case "-f":
+					numFolds = Integer.parseInt(args[++i]);
+					break;
+				case "-r":
+					resultName = args[++i];
+					break;
+				default:
+					break;
+			}
+		}
+		if(cv){
+			try {
+				aa = new AuthorAttribution(trainName);
+				if(maxSeed == 0 && minSeed == 0 && numSeeds == 0){
+					if(numFolds == 0){
+						resultString = aa.doSingleSeedDefaultCV();
+					}else{
+						resultString = aa.doSingleSeedDefaultCV(numFolds);
+					}
+				}else if(maxSeed == 0 && minSeed != 0 && numSeeds == 0){
+					if(numFolds == 0){
+						resultString = aa.doSingleSeedDefaultCV(10, minSeed);
+					}else{
+						resultString = aa.doSingleSeedDefaultCV(numFolds, minSeed);
+					}
+				}else if(minSeed == 0 && maxSeed != 0 && numSeeds == 0){
+					if(numFolds == 0){
+						resultString = aa.doSingleSeedDefaultCV(10, maxSeed);
+					}else{
+						resultString = aa.doSingleSeedDefaultCV(numFolds, maxSeed);
+					}
+				}else if(minSeed != 0 && maxSeed != 0){
+					if(numFolds == 0){
+						resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, maxSeed, 10);
+					}else{
+						resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, maxSeed, numFolds);
+					}
+				}else if(minSeed == 0 && maxSeed == 0 && numSeeds != 0){
+					if(numFolds == 0){
+						resultStringArray = aa.doMultipleSeedDefaultCV(numSeeds);
+					}else{
+						resultStringArray = aa.doMultipleSeedDefaultCV(numSeeds, numFolds);
+					}
+				}else if(minSeed != 0 && maxSeed == 0 && numSeeds != 0){
+					if(numFolds == 0){
+						resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, minSeed+numSeeds-1, 10);
+					}else{
+						resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, minSeed+numSeeds-1, numFolds);
+					}
+				}else if(minSeed == 0 && maxSeed != 0 && numSeeds != 0){
+					if(numFolds == 0){
+						resultStringArray = aa.doMultipleSeedDefaultCV(maxSeed-numSeeds+1, maxSeed, 10);
+					}else{
+						resultStringArray = aa.doMultipleSeedDefaultCV(maxSeed-numSeeds+1, maxSeed, numFolds);
+					}
+				}else{
+					System.err.println("Unexpected Seed Case: minSeed = " + minSeed + ", maxSeed = " + maxSeed + ", numSeeds = " + numSeeds);
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.err.println("Failed to load arff from file: " + trainName);
+				System.exit(1);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.err.println("Error in performing attribution");
+				System.exit(2);
+			}
+		}
+		if(resultString == null && resultStringArray == null){
+			System.out.println("No results!");
+		}else if(resultString != null && resultStringArray == null){
+			if(resultName == null){
+				System.out.println(resultString);
+			}else{
+				try {
+					Utils.writeStringToFile(resultString, resultName);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					System.err.println("Cannot write to: " + resultName);
+					System.out.println(resultString);
+				}
+			}
+		}else if(resultStringArray != null && resultString == null){
+			if(resultName == null){
+				for(int i = 0; i < resultStringArray.length; i++){
+					System.out.println(resultStringArray[i]);
+				}
+			}else{
+				try {
+					Utils.writeStringArrayToFile(resultStringArray, resultName);
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+					System.err.println("Cannot write to: " + resultName);
+					for(int i = 0; i < resultStringArray.length; i++){
+						System.out.println(resultStringArray[i]);
+					}
+				}
+			}
+		}else{
+			System.out.println("Too many results!");
+		}
+	}
+	**/
+		try {
+			aa = new AuthorAttribution(trainName);
+			if(maxSeed == 0 && minSeed == 0 && numSeeds == 0){
+				if(numFolds == 0){
+					resultString = aa.doSingleSeedDefaultCV();
+				}else{
+					resultString = aa.doSingleSeedDefaultCV(numFolds);
+				}
+			}else if(maxSeed == 0 && minSeed != 0 && numSeeds == 0){
+				if(numFolds == 0){
+					resultString = aa.doSingleSeedDefaultCV(10, minSeed);
+				}else{
+					resultString = aa.doSingleSeedDefaultCV(numFolds, minSeed);
+				}
+			}else if(minSeed == 0 && maxSeed != 0 && numSeeds == 0){
+				if(numFolds == 0){
+					resultString = aa.doSingleSeedDefaultCV(10, maxSeed);
+				}else{
+					resultString = aa.doSingleSeedDefaultCV(numFolds, maxSeed);
+				}
+			}else if(minSeed != 0 && maxSeed != 0){
+				if(numFolds == 0){
+					resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, maxSeed, 10);
+				}else{
+					resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, maxSeed, numFolds);
+				}
+			}else if(minSeed == 0 && maxSeed == 0 && numSeeds != 0){
+				if(numFolds == 0){
+					resultStringArray = aa.doMultipleSeedDefaultCV(numSeeds);
+				}else{
+					resultStringArray = aa.doMultipleSeedDefaultCV(numSeeds, numFolds);
+				}
+			}else if(minSeed != 0 && maxSeed == 0 && numSeeds != 0){
+				if(numFolds == 0){
+					resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, minSeed+numSeeds-1, 10);
+				}else{
+					resultStringArray = aa.doMultipleSeedDefaultCV(minSeed, minSeed+numSeeds-1, numFolds);
+				}
+			}else if(minSeed == 0 && maxSeed != 0 && numSeeds != 0){
+				if(numFolds == 0){
+					resultStringArray = aa.doMultipleSeedDefaultCV(maxSeed-numSeeds+1, maxSeed, 10);
+				}else{
+					resultStringArray = aa.doMultipleSeedDefaultCV(maxSeed-numSeeds+1, maxSeed, numFolds);
+				}
+			}else{
+				System.err.println("Unexpected Seed Case: minSeed = " + minSeed + ", maxSeed = " + maxSeed + ", numSeeds = " + numSeeds);
+			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.err.println("Failed to load arff from file: " + trainName);
+			System.exit(1);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.err.println("Error in performing attribution");
+			System.exit(2);
+		}
+
+		if(resultString == null && resultStringArray == null){
+		System.out.println("No results!");
+		}
+		else if(resultString != null && resultStringArray == null){
+		if(resultName == null){
+			System.out.println(resultString);
+		}else{
+			try {
+				Utils.writeStringToFile(resultString, resultName);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.err.println("Cannot write to: " + resultName);
+				System.out.println(resultString);
+			}
+		}
+		}
+		else if(resultStringArray != null && resultString == null){
+		if(resultName == null){
+			for(int i = 0; i < resultStringArray.length; i++){
+				System.out.println(resultStringArray[i]);
+			}
+		}else{
+			try {
+				Utils.writeStringArrayToFile(resultStringArray, resultName);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.err.println("Cannot write to: " + resultName);
+				for(int i = 0; i < resultStringArray.length; i++){
+					System.out.println(resultStringArray[i]);
+				}
+			}
+		}
+		}else{
+		System.out.println("Too many results!");
+		}
+	}
+	
+}

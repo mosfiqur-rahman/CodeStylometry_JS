@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="SCAA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/weka.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/javacsv.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/commons-exec-1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/commons.io_2.0.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/commons-lang3-3.3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/SCAA/lingpipe-4.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

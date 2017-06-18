@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="packages">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/packages" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/packages" recursive="false" />
+  </library>
+</component>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="template">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/CodeStylometry/testJS/template.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
