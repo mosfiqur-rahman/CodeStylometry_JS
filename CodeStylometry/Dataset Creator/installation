@@ -1,0 +1,10 @@
+The following commands are needed to be excuted in the data processing directory before using the code:
+
+1.	npm init
+
+2. 	npm install esprima
+	npm install estraverse
+	
+3.	npm install file-api
+
+4.	npm install escope

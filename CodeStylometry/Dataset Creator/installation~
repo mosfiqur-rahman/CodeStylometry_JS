@@ -1,0 +1,10 @@
+The following comma
+
+1.	npm init
+
+2. 	npm install esprima
+	npm install estraverse
+	
+3.	npm install file-api
+
+4.	npm install escope

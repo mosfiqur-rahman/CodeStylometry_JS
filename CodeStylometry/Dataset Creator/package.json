@@ -1,0 +1,29 @@
+{
+  "name": "javascript_data_processor",
+  "version": "1.0.0",
+  "description": "data processor using esprima and other required dependencies",
+  "main": "main",
+  "dependencies": {
+    "escope": "^3.6.0",
+    "esprima": "^4.0.0",
+    "estraverse": "^4.2.0",
+    "file-api": "^0.10.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mosfiqur-rahman/CodeStylometry_JS.git"
+  },
+  "keywords": [
+    "codeStylometry_project"
+  ],
+  "author": "mosfiqur rahman",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mosfiqur-rahman/CodeStylometry_JS/issues"
+  },
+  "homepage": "https://github.com/mosfiqur-rahman/CodeStylometry_JS#readme"
+}

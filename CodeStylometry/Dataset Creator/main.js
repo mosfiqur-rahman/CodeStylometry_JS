@@ -1,4 +1,7 @@
 var fs = require('fs');
+var esprima = require('esprima');
+	 var escope = require('escope');
+	 
  //var esprima = require('esprima');
  //var escope = require('escope');
  
@@ -7,7 +10,7 @@ var fs = require('fs');
  , FileList = FileAPI.FileList
  , FileReader = FileAPI.FileReader
  ;
- var loc = "home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
+ var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
  var path = require('path');
  var js_files = [];
 
@@ -75,7 +78,7 @@ var fs = require('fs');
             	   	 //console.log(exact_filename);
             	   	   var txt_filename = startPath + '/' + exact_filename + '.txt';
             	   	//console.log(txt_filename);
-            	   	   var ast_filename = startPath + '/' + exact_filename + '.ast'; 
+            	   	 // var ast_filename = startPath + '/' + exact_filename + '.ast'; 
             	   
             	   var fileReader = new FileReader();
 
@@ -172,9 +175,7 @@ var fs = require('fs');
        
        function processAST(startPath)
        {
-    	   var esprima = require('esprima');
-  	 	 var escope = require('escope');
-  	 	 
+    	   
   	 	 
   	 	for(var i=0;i<js_files.length;i++)
         {
@@ -186,7 +187,7 @@ var fs = require('fs');
      	   var exact_filename = js_files[i].slice(0, -3)
      	   	
      	   	   var ast_filename = exact_filename + '.ast'; 
-     	console.log(ast_filename);
+     //console.log(ast_filename);
      	   var fileReader = new FileReader();
 
         	  fileReader.readAsBinaryString(file, 'utf-8');
@@ -195,7 +196,10 @@ var fs = require('fs');
          	  {
         		  var  contents = fileReader.result; 
         		  var processed_content = trimHashbang(contents);
-        		  var data = JSON.stringify(esprima.parse(processed_content),null, 4);
+        		//  var module = { exports: {} } (function (require, module, exports) {  processed_content })(require, module, exports)
+        		  var data = JSON.stringify(esprima.parse(processed_content, { sourceType: 'script',
+        			  
+        			  sourceType: 'module', jsx: true, tolerant: true, tokens: true, range: true, loc: true, comment: true }),null, 4);
         		  //console.log(contents);
         		  //console.log('*****************');
         		  
@@ -220,7 +224,59 @@ var fs = require('fs');
        };
        
        processAST(loc);
+
        
+       
+       
+       function processDOT(startPath)
+       {
+    	   
+  	 	 
+  	 	for(var i=0;i<js_files.length;i++)
+        {
+  	 		//console.log(i + ' ' + js_files[i]);
+  	 		
+  	 	 (function(file){
+  	 		var file = new File(js_files[i]);
+     	   
+     	   var exact_filename = js_files[i].slice(0, -3)
+     	   	
+     	   	   var dot_filename = exact_filename + '.dot'; 
+     console.log(dot_filename);
+     	   var fileReader = new FileReader();
+
+        	  fileReader.readAsBinaryString(file, 'utf-8');
+        	  
+        	  fileReader.onload = function(event) 
+         	  {
+        		  var  contents = fileReader.result; 
+        		  //var processed_content = trimHashbang(contents);
+        		//  var module = { exports: {} } (function (require, module, exports) {  processed_content })(require, module, exports)
+        		  var dot_data = JSON.stringify(esprima.tokenize(contents, { range: true, loc: true, comment: true }),null, 4);
+        		  //console.log(contents);
+        		  //console.log('*****************');
+        		  
+        		  fs.writeFile(dot_filename, dot_data, function(error)
+        	           	 	{
+        	           	 		if(error)
+        	           	 			{
+        	           	 				console.error("write error: " + error.message);
+        	           	 			}
+        	           	 		else
+        	           	 			{
+        	           	 				console.log("successful write to " + dot_filename);
+        	           	 			}
+        	           	 	});
+        		  
+         	  };
+  	 		
+  	 	 })(js_files[i]);  
+  	 		
+        };
+  	 	 
+       };
+       
+       processDOT(loc);
 //  fileReader.onerror = function(event) 
 // {
 //     console.error("File could not be read! Code " + event.target.error.code);
