@@ -1,206 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9009d72d-c905-455e-8109-c9df6b844dac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/packages.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/util.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/Authorship_Attribution.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/Authorship_Attribution1.iml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/0/d089ac955c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/14/700408908e1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/15/c0f62bbc871300171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/17/a071e9dd8a1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/1f/30bd7fac5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2/d00029de570f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/20/50369b028b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/23/c02265605f0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/26/f00df05b971200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2b/100079de8d1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2b/90d081f3540f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/2d/702fa33f8c1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/3/f040edfa5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/33/10cacdb9981200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/3a/7027fe72971200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/3b/10c0e6d9530f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/3b/90218210550f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/41/3021b62a8c1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/43/20961268d01000171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/47/50022cb9570f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5/80ffdebf5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/55/80a24d0b5a0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/59/a041b2295e0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5b/d0090426971200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/5c/4003780b8e1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/64/b0fb5e14570f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/67/205804528b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/69/50187e3c341000171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/6c/20f3ac3e8d1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/6e/004a415c5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/6f/f0e762cf520f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/70/e0ba4794971200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8/90925091a51200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/86/30abecb85e0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8c/4048c008570f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8d/00eed33e8b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/8d/c0e1aa2c8b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/91/701c25675d0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/96/30f91ef59e1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/97/e06efaec5d0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/9b/90aa3035580f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/9c/809c15af8c1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a6/a035cb8f171500171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/a7/d0c5018f5e0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/aa/40b3d99f590f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b/f09c898f9f1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b1/70d2494c8b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b5/0080d38d530f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b8/608e98dd5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/b9/305e3fb3590f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/be/6079677e9f1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c4/40b6f6cd9e1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c6/601c6e7f5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c7/d0e340a9181500171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/c8/70eb9589550f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d/402a9e41590f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d1/80c4b486550f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/d5/20aeac895d0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/dc/a0a094178b1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/dc/c0b294b7520f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/e9/f0614c66580f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ed/60dcba6d5c0f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/ed/9041ec47520f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f1/20a16352540f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f2/00d7b1ae9f1200171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.history/f8/90ba4368570f00171133d6c5eed1096f" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CodeStylometry/.markers.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/CodeStylometry/.syncinfo.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Corpus/.markers.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Corpus/.syncinfo.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Naive Baseline/.markers.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Naive Baseline/.syncinfo.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/SCAA/.markers.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/SCAA/.syncinfo.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.markers.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/1.snap" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.fdt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.fdx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.fnm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.frq" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.nrm" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.prx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.tii" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_1.tis" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments_2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/0.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/jdt-images/9.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.mylyn/.tasks.xml.zip" afterPath="$PROJECT_DIR$/.metadata/.mylyn/.tasks.xml.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.mylyn/tasks.xml.zip" afterPath="$PROJECT_DIR$/.metadata/.mylyn/tasks.xml.zip" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Corpus/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/Corpus/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/SCAA/.markers" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.projects/SCAA/.markers" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments.gen" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments.gen" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2630498905.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2630498905.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2771403403.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2771403403.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2982035129.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/2982035129.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3329151839.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3329151839.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3721837726.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/3721837726.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/742522455.index" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/742522455.index" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/ccw.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/ccw.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.as.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.as.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.css.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.css.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.mxml.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.adobe.flexide.mxml.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.dubture.twig.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.dubture.twig.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.github.eclipsecolortheme.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.github.eclipsecolortheme.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.palantir.typescript.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.palantir.typescript.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.powerflasher.fdt.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.powerflasher.fdt.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.puppetlabs.geppetto.module.dsl.Module.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.puppetlabs.geppetto.module.dsl.Module.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.puppetlabs.geppetto.pp.dsl.PP.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.puppetlabs.geppetto.pp.dsl.PP.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.spket.js.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.spket.js.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.spket.xml.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/com.spket.xml.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/de.walware.statet.base.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/de.walware.statet.base.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/de.walware.statet.r.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/de.walware.statet.r.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/eclihx.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/eclihx.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/goclipse.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/goclipse.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/jp.gr.java_conf.ussiy.app.propedit.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/jp.gr.java_conf.ussiy.app.propedit.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/jsonedit-core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/jsonedit-core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.sf.eclipsefp.haskell.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.sf.eclipsefp.haskell.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.sourceforge.texlipse.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.sourceforge.texlipse.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.vtst.ow.eclipse.less.Less.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/net.vtst.ow.eclipse.less.Less.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.cfeclipse.cfml.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.cfeclipse.cfml.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.chromium.debug.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.chromium.debug.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.cloudsmith.geppetto.pp.dsl.PP.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.cloudsmith.geppetto.pp.dsl.PP.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.codehaus.groovy.eclipse.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.codehaus.groovy.eclipse.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.dadacoalition.yedit.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.dadacoalition.yedit.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.angularjs.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.angularjs.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ant.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ant.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.make.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.make.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.datatools.sqltools.sqleditor.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.datatools.sqltools.sqleditor.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.dltk.ruby.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.dltk.ruby.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.dltk.tcl.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.dltk.tcl.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.e4.CSS.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.e4.CSS.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.e4.ui.workbench.renderers.swt.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.e4.ui.workbench.renderers.swt.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jst.jsp.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.pde.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.php.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.php.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.cvs.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.cvs.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.css.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.css.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.dtd.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.dtd.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.html.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.html.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.jsdt.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xml.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xsl.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.wst.xsl.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.xtend.core.Xtend.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.xtend.core.Xtend.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.epic.perleditor.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.epic.perleditor.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.erlide.ui.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.erlide.ui.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.ide.eclipse.freemarker.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.jboss.ide.eclipse.freemarker.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.nodeclipse.enide.editors.gradle.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.nodeclipse.enide.editors.gradle.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.nodeclipse.enide.editors.jade.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.nodeclipse.enide.editors.jade.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.python.pydev.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.python.pydev.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.scala-ide.play2.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.scala-ide.play2.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.scala-ide.sdt.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.scala-ide.sdt.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.sourceforge.jsonedit.core.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.sourceforge.jsonedit.core.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.sweetlemonade.eclipse.json.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/org.sweetlemonade.eclipse.json.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/winterwell.markdown.prefs" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.core.runtime/.settings/winterwell.markdown.prefs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.core/savedIndexNames.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" afterPath="$PROJECT_DIR$/.metadata/.plugins/org.eclipse.wst.sse.core/task-tags.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.metadata/version.ini" afterPath="$PROJECT_DIR$/.metadata/version.ini" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureCalculators.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureCalculators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractorConcurrent.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractorConcurrent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractorInfoGain.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractorInfoGain.java" />
-    </list>
+    <list default="true" id="9009d72d-c905-455e-8109-c9df6b844dac" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -228,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AuthorAttributionDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AuthorAttributionDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2033">
               <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FeatureExtractor.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-742">
+              <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -947,12 +758,12 @@
       <workItem from="1497813744348" duration="51000" />
       <workItem from="1497813879403" duration="5074000" />
       <workItem from="1497819340307" duration="682000" />
-      <workItem from="1497820078540" duration="4292000" />
+      <workItem from="1497820078540" duration="5585000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13101000" />
+    <option name="totallyTimeSpent" value="14394000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1093,7 +904,7 @@
         <state relative-caret-position="8918">
           <caret line="637" column="5" lean-forward="false" selection-start-line="637" selection-start-column="5" selection-end-line="637" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1111,7 +922,7 @@
         <state relative-caret-position="56">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1129,7 +940,7 @@
         <state relative-caret-position="56">
           <caret line="4" column="25" lean-forward="false" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1147,7 +958,7 @@
         <state relative-caret-position="56">
           <caret line="4" column="25" lean-forward="true" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1299,7 +1110,7 @@
         <state relative-caret-position="8526">
           <caret line="637" column="5" lean-forward="false" selection-start-line="637" selection-start-column="5" selection-end-line="637" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1354,14 +1165,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorAttributionDemo.java" />
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/AuthorAttribution.java" />
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/util/ClassifierUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1426,6 +1229,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2033">
           <caret line="20" column="50" lean-forward="false" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-742">
+          <caret line="23" column="36" lean-forward="false" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
           <folding />
         </state>
       </provider>
