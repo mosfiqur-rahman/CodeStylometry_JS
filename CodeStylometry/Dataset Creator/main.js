@@ -7,7 +7,7 @@ var fs = require('fs');
  , FileList = FileAPI.FileList
  , FileReader = FileAPI.FileReader
  ;
- var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
+ var loc = "/home/xps/workspace/js_work/js_esprima/js_dataset/17authorsYfiles/";
  var path = require('path');
  var js_files = [];
  var content =[];
