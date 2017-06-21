@@ -10,7 +10,7 @@ var fs = require('fs');
  var loc = "home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
  var path = require('path');
  var js_files = [];
- var content =[];
+
  
  //var FileReader = require('filereader');  
  function trimHashbang(code) {
