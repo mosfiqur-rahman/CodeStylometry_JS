@@ -198,8 +198,18 @@ var esprima = require('esprima');
         		  var processed_content = trimHashbang(contents);
         		//  var module = { exports: {} } (function (require, module, exports) {  processed_content })(require, module, exports)
         		  var data = JSON.stringify(esprima.parse(processed_content, { sourceType: 'script',
-        			  
         			  sourceType: 'module', jsx: true, tolerant: true, tokens: true, range: true, loc: true, comment: true }),null, 4);
+        		  
+        		 // var data = esprima.parse(processed_content, { sourceType: 'script',
+        		//	  sourceType: 'module', jsx: true, tolerant: true, tokens: true, range: true, loc: true, comment: true });
+        		  
+        		  /***
+    			   * 
+    			   * try without JSON
+    			   * 
+    			   * 
+    			   ***/
+        		  
         		  //console.log(contents);
         		  //console.log('*****************');
         		  
@@ -252,7 +262,16 @@ var esprima = require('esprima');
         		  var  contents = fileReader.result; 
         		  //var processed_content = trimHashbang(contents);
         		//  var module = { exports: {} } (function (require, module, exports) {  processed_content })(require, module, exports)
+        		  
         		  var dot_data = JSON.stringify(esprima.tokenize(contents, { range: true, loc: true, comment: true }),null, 4);
+        		  //var dot_data = esprima.tokenize(contents, { range: true, loc: true, comment: true });
+        		  /***
+    			   * 
+    			   * try without JSON
+    			   * 
+    			   * 
+    			   ***/
+        		  
         		  //console.log(contents);
         		  //console.log('*****************');
         		  
