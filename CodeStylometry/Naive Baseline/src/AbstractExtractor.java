@@ -12,14 +12,15 @@ import java.util.Stack;
 
 /**
  * Two big assumptions: the code is valid and no silly macros
- * 
- * @author Andrew Liu
- * 
+ *
+ * @author Mosfiqur Rahman
+ *
  */
-public abstract class AbstractExtractor implements FeatureSet {
+public abstract class AbstractExtractor implements FeatureSet
+{
 
 	private File file;
-        //dns43: tokenDelimiter does not escape | properly, might be read as OR
+	// tokenDelimiter does not escape | properly, might be read as OR
 	static String tokenDelimiter = "[*;\\{\\}\\[\\]()+=\\-&/|%!?:,<>~`\\s\"]";
 	MultiSet<String> literals;
 	List<String> commentList;
@@ -29,7 +30,8 @@ public abstract class AbstractExtractor implements FeatureSet {
 	int numWhiteSpaceChars = 0;
 	List<String> lines;
 
-	public AbstractExtractor(File program) throws IOException {
+	public AbstractExtractor(File program) throws IOException
+	{
 		setTokenDelimiter(); // set what separates a token
 
 		/* reading in the program contents into a StringBuffer */
@@ -37,11 +39,13 @@ public abstract class AbstractExtractor implements FeatureSet {
 		BufferedReader reader = new BufferedReader(new FileReader(program));
 		StringBuffer source = new StringBuffer();
 		char nextChar;
-		while (reader.ready()) { // TODO can extract features here
+		while (reader.ready())
+		{ // TODO can extract features here
 			this.length++;
 			nextChar = (char) reader.read();
 			String charStr = "" + nextChar;
-			if (charStr.matches("\\s")) {
+			if (charStr.matches("\\s"))
+			{
 				numWhiteSpaceChars++;
 			}
 			source.append(nextChar);
@@ -57,17 +61,23 @@ public abstract class AbstractExtractor implements FeatureSet {
 		this.commentList = new LinkedList<>();
 		StringBuffer sink = new StringBuffer();
 
-		while (source.length() > 0) {
-			if (matchesLiteral(source)) {
+		while (source.length() > 0)
+		{
+			if (matchesLiteral(source))
+			{
 				// read in the literal
 				this.literals.add(readNextLiteral(source));
-			} else if (matchesComment(source)) {
+			}
+			else if (matchesComment(source))
+			{
 				// read in the comment
 				this.commentList.add(readNextComment(source));
-			} else {
+			}
+			else
+			{
 				// read in the code until after the next delimiter
-                                //dns43: if next char is delimiter, keep reading
-                                //dns43: ... so it acutally deletes the delimiters, right?!
+				// if next char is delimiter, keep reading
+				//... so it acutally deletes the delimiters, right?!
 				readUntilNextToken(source, sink);
 			}
 		}
@@ -76,13 +86,15 @@ public abstract class AbstractExtractor implements FeatureSet {
 		source = sink;
 		sink = new StringBuffer();
 		this.code = source.toString(); // setting the code without literals or
-										// comments
+		// comments
 
 		/* separating the code by blocks */
 		this.blocks = new CodeBlock<String>(this.file.getName());
 		CodeBlock<String> currentBlock = blocks;
-		while (source.length() > 0) {
-			if (isPrototype(source)) {
+		while (source.length() > 0)
+		{
+			if (isPrototype(source))
+			{
 				// adding all statements into the previous block
 				currentBlock.addStatements(breakIntoStmts(sink));
 				sink = new StringBuffer();
@@ -91,19 +103,24 @@ public abstract class AbstractExtractor implements FeatureSet {
 						extractPrototype(source));
 				currentBlock.addChild(temp);
 				currentBlock = temp;
-			} else if (isBlockEnd(source, sink)) {
+			}
+			else if (isBlockEnd(source, sink))
+			{
 				// adding all statements into the previous block
 				currentBlock.addStatements(breakIntoStmts(sink));
 				sink = new StringBuffer();
 				// using the parent block
 				currentBlock = currentBlock.getParent();
-			} else {
+			}
+			else
+			{
 				readUntilNextToken(source, sink);
 			}
 		}
 		Scanner sc = new Scanner(this.file);
 		this.lines = new LinkedList<String>();
-		while (sc.hasNextLine()) {
+		while (sc.hasNextLine())
+		{
 			this.lines.add(sc.nextLine());
 		}
 		sc.close();
@@ -112,7 +129,7 @@ public abstract class AbstractExtractor implements FeatureSet {
 	/**
 	 * Implement this now or make a getter for the token delimiter. Also
 	 * remember to read in the delimiter itself!
-	 * 
+	 *
 	 * @param source
 	 * @param sink
 	 */
@@ -130,7 +147,7 @@ public abstract class AbstractExtractor implements FeatureSet {
 
 	/**
 	 * Don't forget to remove the opening delimiter of the next block
-	 * 
+	 *
 	 * @param source
 	 * @return
 	 */
@@ -138,7 +155,7 @@ public abstract class AbstractExtractor implements FeatureSet {
 
 	/**
 	 * Will put the "while" part into sink if it detects a do-while
-	 * 
+	 *
 	 * @param source
 	 * @param sink
 	 * @return
@@ -147,40 +164,44 @@ public abstract class AbstractExtractor implements FeatureSet {
 
 	/**
 	 * Does NOT empty buffer when done.
-	 * 
+	 *
 	 * @param source
 	 * @return
 	 */
 	abstract List<String> breakIntoStmts(StringBuffer source);
 
-	static void setTokenDelimiter() {
+	static void setTokenDelimiter()
+	{
 		// override if you want
 	}
 
-	final void extractMultipleChars(StringBuffer source, StringBuffer sink,
-			int num) {
-		for (int i = 0; i < num; i++) {
+	final void extractMultipleChars(StringBuffer source, StringBuffer sink, int num)
+	{
+		for (int i = 0; i < num; i++)
+		{
 			extractChar(source, sink);
 		}
 	}
 
-	final void extractChar(StringBuffer source, StringBuffer sink) {
+	final void extractChar(StringBuffer source, StringBuffer sink)
+	{
 		sink.append(source.charAt(0));
 		source.deleteCharAt(0);
 	}
-	
+
 	final char peek(StringBuffer source) {
 		return source.charAt(0);
 	}
 
 	/**
 	 * Remember this eats up the regex char!
-	 * 
+	 *
 	 * @param source
 	 * @param sink
 	 * @param regex
 	 */
-	final void readUntil(StringBuffer source, StringBuffer sink, String regex) {
+	final void readUntil(StringBuffer source, StringBuffer sink, String regex)
+	{
 		this.readBefore(source, sink, regex);
 		if (this.peek(source) != '"') {
 			this.extractChar(source, sink);
@@ -189,13 +210,15 @@ public abstract class AbstractExtractor implements FeatureSet {
 
 	/**
 	 * Same as readUntil except it doesn't eat the regex.
-	 * 
+	 *
 	 * @param source
 	 * @param sink
 	 * @param regex
 	 */
-	final void readBefore(StringBuffer source, StringBuffer sink, String regex) {
-		while (source.length() > 1 && !source.substring(0, 1).matches(regex)) {
+	final void readBefore(StringBuffer source, StringBuffer sink, String regex)
+	{
+		while (source.length() > 1 && !source.substring(0, 1).matches(regex))
+		{
 			this.extractChar(source, sink);
 		}
 	}
@@ -212,24 +235,29 @@ public abstract class AbstractExtractor implements FeatureSet {
 	public int nestingDepth() {
 		return this.blocks.getHeight();
 	}
-	
+
 	@Override
-	public double branchingFactor() {
+	public double branchingFactor()
+	{
 		List<Integer> numChildren = new LinkedList<>();
 		Stack<CodeBlock<String>> stack = new Stack<>();
 		stack.add(this.blocks);
-		while (!stack.empty()) {
+		while (!stack.empty())
+		{
 			CodeBlock<String> myBlock = stack.pop();
-			if (myBlock.children.size() > 0) {
+			if (myBlock.children.size() > 0)
+			{
 				numChildren.add(myBlock.children.size());
-				for (CodeBlock<String> c : myBlock.children) {
+				for (CodeBlock<String> c : myBlock.children)
+				{
 					stack.add(c);
 				}
 			}
 		}
 		int sum = 0;
 		double size = numChildren.size();
-		for (Integer i : numChildren) {
+		for (Integer i : numChildren)
+		{
 			sum += i;
 		}
 		return sum / size;
@@ -256,39 +284,48 @@ public abstract class AbstractExtractor implements FeatureSet {
 	}
 
 	@Override
-	public int numEmptyLines() {
+	public int numEmptyLines()
+	{
 		int count = 0;
 		int bufferCount = 0;
 		boolean leadingFlag = false;
-		for (String line : this.lines) {
-			if (line.matches("[\\s]*")) {
-				if (leadingFlag) {
+		for (String line : this.lines)
+		{
+			if (line.matches("[\\s]*"))
+			{
+				if (leadingFlag)
+				{
 					bufferCount++;
 				}
-			} else {
-				count += bufferCount;
-				bufferCount = 0;
-				leadingFlag = true;
-			}
+			} else
+				{
+					count += bufferCount;
+					bufferCount = 0;
+					leadingFlag = true;
+				}
 		}
 		return count;
 	}
 
 	@Override
-	public List<Integer> lineLengths() {
+	public List<Integer> lineLengths()
+	{
 		List<Integer> lengths = new LinkedList<Integer>();
-		for (String line : this.lines) {
+		for (String line : this.lines)
+		{
 			lengths.add(line.length());
 		}
 		return lengths;
 	}
 
 	@Override
-	public double avgLineLength() {
+	public double avgLineLength()
+	{
 		int sum = 0;
 		int count = 0;
 		Iterator<Integer> iter = this.lineLengths().iterator();
-		while (iter.hasNext()) {
+		while (iter.hasNext())
+		{
 			sum += iter.next();
 			count++;
 		}
@@ -299,38 +336,50 @@ public abstract class AbstractExtractor implements FeatureSet {
 	public double whiteSpaceRatio() {
 		return this.length / (double) this.numWhiteSpaceChars;
 	}
-	
+
 	@Override
-	public boolean tabsLeadLines() {
+	public boolean tabsLeadLines()
+	{
 		int tabs = 0;
 		int spaces = 0;
-		for (String s : this.code.split("\\n")) {
-			if (s.matches("\\t.*")) {
+		for (String s : this.code.split("\\n"))
+		{
+			if (s.matches("\\t.*"))
+			{
 				tabs++;
-			} else if (s.matches(" .*")) {
+			}
+			else if (s.matches(" .*"))
+			{
 				spaces++;
 			}
 		}
 		return tabs >= spaces;
 	}
-	
+
 	@Override
 	public String instanceID() {
 		return this.file.getName();
 	}
-	
+
 	@Override
-	public Map<WhiteSpace, Integer> getWhiteSpace() {
+	public Map<WhiteSpace, Integer> getWhiteSpace()
+	{
 		MultiSet<WhiteSpace> whitespace = new MultiSet<WhiteSpace>();
 		whitespace.put(WhiteSpace.newLine, 0);
 		whitespace.put(WhiteSpace.tab, 0);
 		whitespace.put(WhiteSpace.space, 0);
-		for (int i = 0; i < this.code.length(); i++) {
-			if (this.code.charAt(i) == '\n') {
+		for (int i = 0; i < this.code.length(); i++)
+		{
+			if (this.code.charAt(i) == '\n')
+			{
 				whitespace.add(WhiteSpace.newLine);
-			} else if (this.code.charAt(i) == '\t') {
+			}
+			else if (this.code.charAt(i) == '\t')
+			{
 				whitespace.add(WhiteSpace.tab);
-			} else if (this.code.charAt(i) == ' ') {
+			}
+			else if (this.code.charAt(i) == ' ')
+			{
 				whitespace.add(WhiteSpace.space);
 			}
 		}

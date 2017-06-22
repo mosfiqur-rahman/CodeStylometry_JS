@@ -212,7 +212,7 @@ var esprima = require('esprima');
         		  
         		  //console.log(contents);
         		  //console.log('*****************');
-        		  
+        		  console.log(ast_filename);
         		  fs.writeFile(ast_filename, data, function(error)
         	           	 	{
         	           	 		if(error)
@@ -252,7 +252,7 @@ var esprima = require('esprima');
      	   var exact_filename = js_files[i].slice(0, -3)
      	   	
      	   	   var dot_filename = exact_filename + '.dot'; 
-     console.log(dot_filename);
+    // console.log(dot_filename);
      	   var fileReader = new FileReader();
 
         	  fileReader.readAsBinaryString(file, 'utf-8');
@@ -260,10 +260,10 @@ var esprima = require('esprima');
         	  fileReader.onload = function(event) 
          	  {
         		  var  contents = fileReader.result; 
-        		  //var processed_content = trimHashbang(contents);
+        		  var processed_content = trimHashbang(contents);
         		//  var module = { exports: {} } (function (require, module, exports) {  processed_content })(require, module, exports)
         		  
-        		  var dot_data = JSON.stringify(esprima.tokenize(contents, { range: true, loc: true, comment: true }),null, 4);
+        		  var dot_data = JSON.stringify(esprima.tokenize(processed_content, { range: true, loc: true, comment: true }),null, 4);
         		  //var dot_data = esprima.tokenize(contents, { range: true, loc: true, comment: true });
         		  /***
     			   * 
