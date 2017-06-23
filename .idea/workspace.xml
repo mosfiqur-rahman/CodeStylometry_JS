@@ -2,226 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9009d72d-c905-455e-8109-c9df6b844dac" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (10)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (10)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (10)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (10)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (11)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (11)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (11)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (11)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (12)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (12)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (12)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (12)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (13)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (13)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (13)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (13)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (2)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (2)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (2)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (2)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (3)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (3)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (3)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (3)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (4)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (4)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (4)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (4)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (5)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (5)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (5)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (5)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (6)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (6)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (6)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (6)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (7)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (7)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (7)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (7)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (8)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (8)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (8)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (8)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (9)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (9)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (9)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export (9)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (15)_FILES/__MACOSX/export/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (15)_FILES/export/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (15)_FILES/export/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (15)_FILES/export/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (15)_FILES/export/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (16)_FILES/__MACOSX/export/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (16)_FILES/export/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (16)_FILES/export/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (16)_FILES/export/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/export.zip (16)_FILES/export/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (10)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (11)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (12)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (13)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (2)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (3)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (4)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (5)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (6)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (7)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (8)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export (9)/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/__MACOSX/export/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (15)_FILES/export/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/__MACOSX/export/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/jsrtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (16)_FILES/export/source.lamdu" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/rtsConfig..txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export.zip (8)_FILES/export/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/__MACOSX/export/._.DS_Store" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/main.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/rts.ast" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/rts.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/rts.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/rtsConfig.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/js/rtsConfig.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/unchecked/yairchu/export/export/jsrtsConfig.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/main.js" afterPath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/AbstractExtractor.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/AbstractExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory2.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory3.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory4.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/CodeBlock.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/CodeBlock.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorClassificationRelaxed.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorClassificationRelaxed.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/BigramExtractor.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/BigramExtractor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -250,17 +39,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractExtractor.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/AbstractExtractor.java">
+      <file leaf-file-name="ARFFFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="180" column="8" lean-forward="false" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+            <state relative-caret-position="319">
+              <caret line="100" column="13" lean-forward="true" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;class#AbstractExtractor#0" expanded="true" />
-                <element signature="e#2804#2812#0" expanded="true" />
-                <element signature="docComment;method#readUntilNextToken#0;class#AbstractExtractor#0" expanded="true" />
-                <element signature="docComment;method#extractPrototype#0;class#AbstractExtractor#0" expanded="true" />
+                <element signature="e#4067#4075#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="19" column="111" lean-forward="false" selection-start-line="19" selection-start-column="111" selection-end-line="19" selection-end-column="111" />
+              <folding>
+                <element signature="docComment;method#main#0;class#Driver#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -289,6 +87,16 @@
         <option value="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttribution.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/AbstractExtractor.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorClassificationRelaxed.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/BigramExtractor.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory2.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory3.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory4.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/CodeBlock.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ControlStatement.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" />
       </list>
     </option>
   </component>
@@ -966,12 +774,12 @@
       <workItem from="1497813744348" duration="51000" />
       <workItem from="1497813879403" duration="5074000" />
       <workItem from="1497819340307" duration="682000" />
-      <workItem from="1497820078540" duration="6893000" />
+      <workItem from="1497820078540" duration="11900000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15702000" />
+    <option name="totallyTimeSpent" value="20709000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1001,7 +809,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16491596" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24474789" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1034,30 +842,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/SCAA/AuthorAttribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/util/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/util/ClassifierUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
@@ -1078,6 +862,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,6 +1145,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1418,7 +1208,7 @@
         <state relative-caret-position="196">
           <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1428,7 +1218,7 @@
         <state relative-caret-position="440">
           <caret line="72" column="23" lean-forward="true" selection-start-line="72" selection-start-column="23" selection-end-line="72" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1451,14 +1241,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/AbstractExtractor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="180" column="8" lean-forward="false" selection-start-line="180" selection-start-column="8" selection-end-line="180" selection-end-column="8" />
+        <state relative-caret-position="602">
+          <caret line="209" column="0" lean-forward="true" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#AbstractExtractor#0" expanded="true" />
             <element signature="e#2804#2812#0" expanded="true" />
             <element signature="docComment;method#readUntilNextToken#0;class#AbstractExtractor#0" expanded="true" />
             <element signature="docComment;method#extractPrototype#0;class#AbstractExtractor#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="91" column="5" lean-forward="true" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorClassification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/CheckFiles.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1638">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/DatasetCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorClassificationRelaxed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2058">
+          <caret line="156" column="0" lean-forward="true" selection-start-line="156" selection-start-column="0" selection-end-line="156" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/BigramExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="186" column="5" lean-forward="true" selection-start-line="186" selection-start-column="5" selection-end-line="186" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="28" selection-end-line="108" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="81" column="1" lean-forward="false" selection-start-line="81" selection-start-column="1" selection-end-line="81" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="1" lean-forward="false" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ControlStatement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/CodeBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="18" column="2" lean-forward="true" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/ARFFFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="100" column="13" lean-forward="true" selection-start-line="100" selection-start-column="13" selection-end-line="100" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4067#4075#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="111" lean-forward="false" selection-start-line="19" selection-start-column="111" selection-end-line="19" selection-end-column="111" />
+          <folding>
+            <element signature="docComment;method#main#0;class#Driver#0" expanded="true" />
           </folding>
         </state>
       </provider>

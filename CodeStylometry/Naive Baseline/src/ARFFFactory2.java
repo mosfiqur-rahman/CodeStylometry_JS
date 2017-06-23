@@ -5,14 +5,14 @@ import java.util.Set;
 
 
 public class ARFFFactory2 extends ARFFFactory {
-	
+
 	protected Set<String> instanceIDs = new HashSet<>();
-	
+
 	@Override
 	protected void appendAttributes(FeatureSet f, StringBuffer x) {
 		x.append(((AbstractExtractor) f).getFile().getName() + ",");
 		instanceIDs.add(((AbstractExtractor) f).getFile().getName());
-		
+
 		x.append(f.numFunctions() + ",");
 		x.append(f.length() + ",");
 		x.append(f.numTokens() + ",");
@@ -23,7 +23,7 @@ public class ARFFFactory2 extends ARFFFactory {
 		x.append(f.numEmptyLines() + ",");
 		x.append(f.whiteSpaceRatio() + ",");
 		x.append(f.avgParamsPerFunction() + ",");
-		
+
 		x.append(stdDev(f.lineLengths()) + ",");
 		x.append(f.numMacros() + ",");
 		x.append(("" + f.tabsLeadLines()).toUpperCase() + ","); // double check
@@ -40,7 +40,7 @@ public class ARFFFactory2 extends ARFFFactory {
 		x.append(f.getLoops().get(Loops.doWhileLoop) + ",");
 		x.append(("" + f.newLineBrace()).toUpperCase() + ",");
 	}
-	
+
 	@Override
 	protected void arffAttributes(List<String> allLines) {
 		allLines.add("@attribute instanceID {");
@@ -52,7 +52,7 @@ public class ARFFFactory2 extends ARFFFactory {
 			}
 		}
 		allLines.add("}\n");
-		
+
 		allLines.add("@attribute numFunctions numeric\n");
 		allLines.add("@attribute length numeric\n");
 		allLines.add("@attribute numTokens numeric\n");
@@ -63,7 +63,7 @@ public class ARFFFactory2 extends ARFFFactory {
 		allLines.add("@attribute numEmptyLines numeric\n");
 		allLines.add("@attribute whiteSpaceRatio numeric\n");
 		allLines.add("@attribute avgParams numeric\n");
-		
+
 		allLines.add("@attribute stdDevLineLength numeric\n");
 		allLines.add("@attribute numMacros numeric\n");
 		allLines.add("@attribute tabsLeadLines {TRUE, FALSE}\n");
@@ -78,7 +78,7 @@ public class ARFFFactory2 extends ARFFFactory {
 		allLines.add("@attribute numFor numeric\n");
 		allLines.add("@attribute numWhile numeric\n");
 		allLines.add("@attribute numDo numeric\n");
-		allLines.add("@attribute newLineBeforeOpeningBrace {TRUE, FALSE}\n");		
+		allLines.add("@attribute newLineBeforeOpeningBrace {TRUE, FALSE}\n");
 	}
 }
 

@@ -14,9 +14,9 @@ import java.util.List;
 /**
  * An data structure that resembles an n-ary tree. It represents blocks of code
  * and its nested blocks (and statements).
- * 
- * @author Andrew Liu
- * 
+ *
+ * @author Mosfiqur Rahman
+ *
  * @param <T>
  *            The type of statement each block holds. Usually a String.
  */
@@ -38,7 +38,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Constructor.
-	 * 
+	 *
 	 * @param prototype
 	 *            The "prototype" for the block. It can be a function prototype,
 	 *            or a class declaration, loop header, etc...
@@ -50,7 +50,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Copy constructor.
-	 * 
+	 *
 	 * @param copy
 	 *            CodeBlock to copy.
 	 */
@@ -66,7 +66,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets the block's parent block.
-	 * 
+	 *
 	 * @return The parent block.
 	 */
 	public CodeBlock<T> getParent() {
@@ -75,7 +75,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Changes the block's parent block.
-	 * 
+	 *
 	 * @param parent
 	 *            The new parent block.
 	 */
@@ -85,7 +85,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets the prototype for this block.
-	 * 
+	 *
 	 * @return The block's prototype.
 	 */
 	public String getPrototype() {
@@ -95,7 +95,7 @@ public class CodeBlock<T> {
 	/**
 	 * Does a depth-first search to get the prototypes of this code block and
 	 * all child code blocks.
-	 * 
+	 *
 	 * @return All prototypes.
 	 */
 	public List<String> getPrototypesRecursively() {
@@ -109,7 +109,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Changes the block's prototype.
-	 * 
+	 *
 	 * @param prototype
 	 *            The new prototype.
 	 */
@@ -119,7 +119,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Adds the statement to the list of statements for the block.
-	 * 
+	 *
 	 * @param statement
 	 *            The statement to add.
 	 */
@@ -129,7 +129,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Adds multiple statements to the list of statements.
-	 * 
+	 *
 	 * @param statements
 	 *            The list of statements to add.
 	 */
@@ -141,7 +141,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets the list of statements for the current block.
-	 * 
+	 *
 	 * @return The list of statements for the current block.
 	 */
 	public List<T> getStatements() {
@@ -150,7 +150,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets a list of all statements for the block and its children depth-first.
-	 * 
+	 *
 	 * @return List of all statements.
 	 */
 	public List<T> getStatementsRecursively() {
@@ -163,7 +163,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Adds a new child to the code block.
-	 * 
+	 *
 	 * @param child
 	 *            The new child.
 	 */
@@ -174,7 +174,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets the list of children for the code block.
-	 * 
+	 *
 	 * @return The list of code block children.
 	 */
 	public List<CodeBlock<T>> getChildren() {
@@ -187,7 +187,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Calculates the height of this tree structure.
-	 * 
+	 *
 	 * @return The height of the tree.
 	 */
 	public int getHeight() {
@@ -204,7 +204,7 @@ public class CodeBlock<T> {
 
 	/**
 	 * Gets the total number of code block children including the current block.
-	 * 
+	 *
 	 * @return The total number of nodes in the tree.
 	 */
 	public int getTotalNumBlocks() {

@@ -3,14 +3,14 @@ import java.util.List;
 
 
 public class ARFFFactory3 extends ARFFFactory2 {
-	
+
 	@Override
 	protected void appendAttributes(FeatureSet f, StringBuffer x) {
 		double len = f.length();
-		
+
 		x.append(((AbstractExtractor) f).getFile().getName() + ",");
 		instanceIDs.add(((AbstractExtractor) f).getFile().getName());
-		
+
 		x.append(Math.log(f.numFunctions() / len) + ",");
 //		x.append(f.length() + ",");
 		x.append(Math.log(f.numTokens() / len) + ",");
@@ -21,14 +21,14 @@ public class ARFFFactory3 extends ARFFFactory2 {
 		x.append(Math.log(f.numEmptyLines() / len) + ",");
 		x.append(f.whiteSpaceRatio() + ",");
 		x.append(f.avgParamsPerFunction() + ",");
-		
+
 		x.append(stdDev(f.lineLengths()) + ",");
 		x.append(Math.log(f.numMacros() / len) + ",");
 		x.append(("" + f.tabsLeadLines()).toUpperCase() + ","); // double check
 		x.append(Math.log(f.getWhiteSpace().get(WhiteSpace.tab) / len) + ",");
 		x.append(Math.log(f.getWhiteSpace().get(WhiteSpace.space) / len) + ",");
 		x.append(stdDev(f.numFunctionParams()) + ",");
-                //dns43: guess its faste to generate getControlStructures Map once, but only relevant for long code
+		//dns43: guess its faste to generate getControlStructures Map once, but only relevant for long code
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.ifStatement) / len) + ",");
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.elifStatement) / len) + ",");
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.elseStatement) / len) + ",");
@@ -39,7 +39,7 @@ public class ARFFFactory3 extends ARFFFactory2 {
 		x.append(Math.log(f.getLoops().get(Loops.doWhileLoop) / len) + ",");
 		x.append(("" + f.newLineBrace()).toUpperCase() + ",");
 	}
-	
+
 	@Override
 	protected void arffAttributes(List<String> allLines) {
 		allLines.add("@attribute instanceID {");
@@ -51,7 +51,7 @@ public class ARFFFactory3 extends ARFFFactory2 {
 			}
 		}
 		allLines.add("}\n");
-		
+
 		allLines.add("@attribute log(numFunctions/length) numeric\n");
 //		allLines.add("@attribute length numeric\n");
 		allLines.add("@attribute log(numTokens/length) numeric\n");
@@ -62,7 +62,7 @@ public class ARFFFactory3 extends ARFFFactory2 {
 		allLines.add("@attribute log(numEmptyLines/length) numeric\n");
 		allLines.add("@attribute whiteSpaceRatio numeric\n");
 		allLines.add("@attribute avgParams numeric\n");
-		
+
 		allLines.add("@attribute stdDevLineLength numeric\n");
 		allLines.add("@attribute log(numMacros/length) numeric\n");
 		allLines.add("@attribute tabsLeadLines {TRUE, FALSE}\n");

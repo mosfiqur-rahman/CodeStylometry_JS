@@ -13,7 +13,8 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.StringUtils;
 
 
-public class BigramExtractor {
+public class BigramExtractor
+{
 	  
 
     public static void main(String[] args) throws IOException
@@ -119,7 +120,8 @@ public class BigramExtractor {
 }
     
     
-    public static String [] getASTNodeBigrams(String dirPath) throws IOException{
+    public static String [] getASTNodeBigrams(String dirPath) throws IOException
+    {
 
 
     List test_file_paths = Util.listDepFiles(dirPath);
@@ -128,7 +130,8 @@ public class BigramExtractor {
 	Set<String> bigrams = new LinkedHashSet<String>();
 	String[] uniquebigrams = null;
 	
-    for(int i=0; i< test_file_paths.size(); i++){
+    for(int i=0; i< test_file_paths.size(); i++)
+    {
 		String filePath = test_file_paths.get(i).toString();  
 	//	System.out.println(filePath);
 
@@ -154,22 +157,25 @@ public class BigramExtractor {
 		   Matcher matcher = pattern.matcher(inputTextParanthesisRemoved);
 		   
 		   
-			while (matcher.find()) {
+			while (matcher.find())
+			{
 //				System.out.println("Found a " + matcher.group() + ".");
 				unigrams.add(matcher.group());
 			}
 			
-		   while (matcher.find()) {
+		   while (matcher.find())
+		   {
 		       uniqueWords.add(matcher.group(1));}
 		   
 		   }
-		   }
+    }
 	
 		  
 	
 
  //   String[] words = uniqueWords.toArray(new String[0]);
-	for(int i=1; i<unigrams.size(); i++){
+	for(int i=1; i<unigrams.size(); i++)
+	{
 	   //   System.out.println( unigrams.get(i-1));
 		   bigrams.add(unigrams.get(i-1).trim() + " "+unigrams.get(i).trim());
 		       uniquebigrams = bigrams.toArray(new String[bigrams.size()]);
