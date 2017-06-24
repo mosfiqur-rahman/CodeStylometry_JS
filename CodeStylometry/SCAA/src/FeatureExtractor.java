@@ -46,15 +46,17 @@ public class FeatureExtractor
 		       		for(numberFiles = 1 ; numberFiles < 2; numberFiles++)
 		       		{
 		       			
-		       			FileUtils.write(new File( "/home/xps/Videos/7authors4file/7authors4file.arff"), "");
+		       			FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4fileNB.arff"), "");
 		       			
-		       			String output_filename = "/home/xps/Videos/7authors4file/7authors4file.arff" ;
+		       			String output_filename = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4file.arff" ;
 		    			
 		       			
-		       			String test_dir = "/home/xps/Videos/7authors4file";
+		       			String test_dir = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4file/";
 
 
 		    			List test_file_paths = Util.listTextFiles(test_dir);
+
+		    			System.out.println(test_file_paths);
 
 		    			String text = "";
 		    			// first specify relation
@@ -248,8 +250,9 @@ public class FeatureExtractor
 		Util.writeFile(fileNameID+",", output_filename, true);
 		Util.writeFile(FeatureCalculators.functionIDCount(featureText)+",", output_filename, true);
 		String ASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"ast");
-		String DepASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"dep");
-					
+		//String DepASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"dep");
+
+		String DepASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"ast");
 		String sourceCode = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"js");
 
 		Util.writeFile(FeatureCalculators.CFGNodeCount(ASTText)+",", output_filename, true);

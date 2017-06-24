@@ -10,29 +10,22 @@ import java.util.Stack;
 
 public class ARFFFactory {
 
-	public static AbstractExtractor getExtractor(File f) throws IOException
-	{
+	public static AbstractExtractor getExtractor(File f) throws IOException {
 		AbstractExtractor x = null;
-		if (f.getName().matches(".*\\.cpp"))
-		{
+		if (f.getName().matches(".*\\.cpp")) {
 			x = new ExtractorCPP(f);
 		}
-		else if (f.getName().matches(".*\\.js"))
-		{
+		else if (f.getName().matches(".*\\.js")) {
 			// introducing a new class )implements AbstractExtractor
 			x = new ExtractorJS(f);
-			//
 			// undocumented feature: uses C as default language
-		}
-		else
-			{
+		}else {
 			x = new ExtractorC(f);
 		}
 		return x;
 	}
 
-	protected void appendAttributes(FeatureSet f, StringBuffer x)
-	{
+	protected void appendAttributes(FeatureSet f, StringBuffer x) {
 		x.append(f.numFunctions() + ",");
 		x.append(f.length() + ",");
 		x.append(f.numTokens() + ",");
@@ -45,8 +38,7 @@ public class ARFFFactory {
 		x.append(f.avgParamsPerFunction() + ",");
 	}
 
-	public String getInstanceData(FeatureSet f, Set<String> authors)
-	{
+	public String getInstanceData(FeatureSet f, Set<String> authors) {
 
 		StringBuffer x = new StringBuffer();
 		//
@@ -58,8 +50,7 @@ public class ARFFFactory {
 		// Util.writeFile(allLines, targetPath, true);
 	}
 
-	public static String getAuthorName(AbstractExtractor e)
-	{
+	public static String getAuthorName(AbstractExtractor e) {
 		File f = e.getFile();
 //		String s = f.getName();
 //		s = s.replaceFirst("p[\\d]+\\.", "");
@@ -70,31 +61,24 @@ public class ARFFFactory {
 		return s.substring(0, s.length());
 	}
 
-	public void makeARFF(String rootDirectory, String targetPath)
-	{
-		// recursively spider thru all c/cpp files and make into a list of files
+	public void makeARFF(String rootDirectory, String targetPath) {
+		// recursively spider through all js/c/cpp files and make into a list of files
 		// call method below
 		// throw new UnsupportedOperationException();
 		Stack<File> files = new Stack<File>();
 		List<File> programs = new LinkedList<File>();
 		File f = new File(rootDirectory);
 		files.add(f);
-		while (files.size() > 0)
-		{
+		while (files.size() > 0) {
 			File temp = files.pop();
-			for (File myFile : temp.listFiles())
-			{
-				if (myFile.isDirectory())
-				{
+			for (File myFile : temp.listFiles()) {
+				if (myFile.isDirectory()) {
 					files.add(myFile);
-				}
-				else if (myFile.isFile())
-				{
-					//dns43: at this point the code adds files of different types...
+				} else if (myFile.isFile()) {
+					// at this point the code adds files of different types...
 					if (myFile.getName().matches(".*\\.c")
 							|| myFile.getName().matches(".*\\.cpp")
-							|| myFile.getName().matches(".*\\.js"))
-					{
+							|| myFile.getName().matches(".*\\.js")){
 						programs.add(myFile);
 					}
 				}
@@ -103,20 +87,16 @@ public class ARFFFactory {
 		makeARFF(programs, targetPath);
 	}
 
-	public void makeARFF(List<File> files, String targetPath)
-	{
+	public void makeARFF(List<File> files, String targetPath) {
 		Set<String> authors = new HashSet<>();
 		List<String> allLines = new LinkedList<String>();
 		// for each file in the list, get instance data
-		for (File f : files)
-		{
+		for (File f : files) {
 			System.out.println(f.getAbsolutePath());
-			try
-			{
-				allLines.add(getInstanceData((FeatureSet) getExtractor(f), authors));
-			}
-			catch (IOException e)
-			{
+			try {
+				allLines.add(getInstanceData((FeatureSet) getExtractor(f),
+						authors));
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
@@ -127,8 +107,7 @@ public class ARFFFactory {
 		System.out.println(files.size() + " files");
 	}
 
-	protected void arffAttributes(List<String> allLines)
-	{
+	protected void arffAttributes(List<String> allLines) {
 		allLines.add("@attribute numFunctions numeric\n");
 		allLines.add("@attribute length numeric\n");
 		allLines.add("@attribute numTokens numeric\n");
@@ -141,8 +120,7 @@ public class ARFFFactory {
 		allLines.add("@attribute avgParams numeric\n");
 	}
 
-	public void makeARFFHeader(String targetPath, Set<String> authors)
-	{
+	public void makeARFFHeader(String targetPath, Set<String> authors) {
 		// put @relation at top
 		// put all the @attribute lines
 		List<String> allLines = new LinkedList<String>();
@@ -152,11 +130,9 @@ public class ARFFFactory {
 		//
 		allLines.add("@attribute author {");
 		Iterator<String> author = authors.iterator();
-		while (author.hasNext())
-		{
+		while (author.hasNext()) {
 			allLines.add(author.next());
-			if (author.hasNext())
-			{
+			if (author.hasNext()) {
 				allLines.add(",");
 			}
 		}
@@ -164,26 +140,21 @@ public class ARFFFactory {
 		Util.writeFile(allLines, targetPath, false);
 	}
 
-	public static double stdDev(Map<Integer, Integer> mappy)
-	{
+	public static double stdDev(Map<Integer, Integer> mappy) {
 		List<Integer> list = new LinkedList<Integer>();
-		for (Integer i : mappy.keySet())
-		{
-			for (int j = 0; j < mappy.get(i); j++)
-			{
+		for (Integer i : mappy.keySet()) {
+			for (int j = 0; j < mappy.get(i); j++) {
 				list.add(i);
 			}
 		}
 		return stdDev(list);
 	}
 
-	public static double variance(List<Integer> list)
-	{
+	public static double variance(List<Integer> list)  {
 		int sum1 = 0; // E(x^2)
 		int sum2 = 0; // E(x)
 		double size = list.size();
-		for (Integer i : list)
-		{
+		for (Integer i : list) {
 			sum1 += i * i;
 			sum2 += i;
 		}

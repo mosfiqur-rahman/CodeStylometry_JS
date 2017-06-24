@@ -26,8 +26,8 @@ import org.apache.commons.io.filefilter.WildcardFileFilter;
 
 import weka.core.Instance;
 import weka.core.Instances;
-import weka.filters.Filter;
-import weka.filters.unsupervised.attribute.Remove;
+//import weka.filters.Filter;
+//import weka.filters.unsupervised.attribute.Remove;
 
 /**
  * Util has necessary functions for file processing.

@@ -263,13 +263,13 @@ public class ExtractorC extends AbstractExtractor {
 			if (s.matches("do [\\w\\W]*")) {
 				myLoops.add(Loops.doWhileLoop);
 			} else if (s.matches("for [\\w\\W]*")) {
-                        //dns43: acutally counts "fors" AND "for ins"
-                        //dns43: maybe better do #forLoops=#forLoops-#forInLoops ?
+                        // acutally counts "fors" AND "for ins"
+                        // maybe better do #forLoops=#forLoops-#forInLoops ?
 				myLoops.add(Loops.forLoop);
                         } else if (s.matches("[\\w\\W]* in [\\w\\W]*")) { //dns43: STRUCTURE = for (variable in object) {... }
 				myLoops.add(Loops.forInLoop);
-                        //dns43: acutally counts "whiles" AND "do whiles"
-                        //dns43: maybe better do #whileLoops=#whileLoops-#doLoops ?
+                        // acutally counts "whiles" AND "do whiles"
+                        // maybe better do #whileLoops=#whileLoops-#doLoops ?
 			} else if (s.matches("while [\\w\\W]*")) {
 				myLoops.add(Loops.whileLoop);
 			}

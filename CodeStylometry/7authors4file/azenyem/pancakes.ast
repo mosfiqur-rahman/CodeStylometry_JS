@@ -1,0 +1,1552 @@
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "init": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "Identifier",
+                            "name": "require"
+                        },
+                        "arguments": [
+                            {
+                                "type": "Literal",
+                                "value": "fs",
+                                "raw": "'fs'"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "fs"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "readFile"
+                    }
+                },
+                "arguments": [
+                    {
+                        "type": "MemberExpression",
+                        "computed": true,
+                        "object": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "process"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "argv"
+                            }
+                        },
+                        "property": {
+                            "type": "Literal",
+                            "value": 2,
+                            "raw": "2"
+                        }
+                    },
+                    {
+                        "type": "Literal",
+                        "value": "utf8",
+                        "raw": "'utf8'"
+                    },
+                    {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [
+                            {
+                                "type": "Identifier",
+                                "name": "err"
+                            },
+                            {
+                                "type": "Identifier",
+                                "name": "data"
+                            }
+                        ],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "Identifier",
+                                        "name": "err"
+                                    },
+                                    "consequent": {
+                                        "type": "ThrowStatement",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "err"
+                                        }
+                                    },
+                                    "alternate": null
+                                },
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "lines"
+                                            },
+                                            "init": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "MemberExpression",
+                                                    "computed": false,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "data"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "split"
+                                                    }
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": "\n",
+                                                        "raw": "'\\n'"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "kind": "var"
+                                },
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "problems"
+                                            },
+                                            "init": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "parseInt"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "CallExpression",
+                                                        "callee": {
+                                                            "type": "MemberExpression",
+                                                            "computed": false,
+                                                            "object": {
+                                                                "type": "Identifier",
+                                                                "name": "lines"
+                                                            },
+                                                            "property": {
+                                                                "type": "Identifier",
+                                                                "name": "shift"
+                                                            }
+                                                        },
+                                                        "arguments": []
+                                                    },
+                                                    {
+                                                        "type": "Literal",
+                                                        "value": 10,
+                                                        "raw": "10"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "kind": "var"
+                                },
+                                {
+                                    "type": "ForStatement",
+                                    "init": {
+                                        "type": "VariableDeclaration",
+                                        "declarations": [
+                                            {
+                                                "type": "VariableDeclarator",
+                                                "id": {
+                                                    "type": "Identifier",
+                                                    "name": "i"
+                                                },
+                                                "init": {
+                                                    "type": "Literal",
+                                                    "value": 0,
+                                                    "raw": "0"
+                                                }
+                                            }
+                                        ],
+                                        "kind": "var"
+                                    },
+                                    "test": {
+                                        "type": "BinaryExpression",
+                                        "operator": "<",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "i"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "problems"
+                                        }
+                                    },
+                                    "update": {
+                                        "type": "UpdateExpression",
+                                        "operator": "++",
+                                        "argument": {
+                                            "type": "Identifier",
+                                            "name": "i"
+                                        },
+                                        "prefix": true
+                                    },
+                                    "body": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "CallExpression",
+                                                    "callee": {
+                                                        "type": "Identifier",
+                                                        "name": "solve"
+                                                    },
+                                                    "arguments": [
+                                                        {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": false,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "lines"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Identifier",
+                                                                    "name": "shift"
+                                                                }
+                                                            },
+                                                            "arguments": []
+                                                        },
+                                                        {
+                                                            "type": "CallExpression",
+                                                            "callee": {
+                                                                "type": "MemberExpression",
+                                                                "computed": false,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "lines"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Identifier",
+                                                                    "name": "shift"
+                                                                }
+                                                            },
+                                                            "arguments": []
+                                                        },
+                                                        {
+                                                            "type": "BinaryExpression",
+                                                            "operator": "+",
+                                                            "left": {
+                                                                "type": "Identifier",
+                                                                "name": "i"
+                                                            },
+                                                            "right": {
+                                                                "type": "Literal",
+                                                                "value": 1,
+                                                                "raw": "1"
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false
+                    }
+                ]
+            }
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "Nums"
+                    },
+                    "init": {
+                        "type": "FunctionExpression",
+                        "id": null,
+                        "params": [],
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "ArrayExpression",
+                                            "elements": []
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "maxNum"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": 0,
+                                            "raw": "0"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "generator": false,
+                        "expression": false
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Nums"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "prototype"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "add"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "pancakeNum"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "IfStatement",
+                                "test": {
+                                    "type": "UnaryExpression",
+                                    "operator": "!",
+                                    "argument": {
+                                        "type": "BinaryExpression",
+                                        "operator": "in",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "pancakeNum"
+                                        },
+                                        "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            }
+                                        }
+                                    },
+                                    "prefix": true
+                                },
+                                "consequent": {
+                                    "type": "BlockStatement",
+                                    "body": [
+                                        {
+                                            "type": "ExpressionStatement",
+                                            "expression": {
+                                                "type": "AssignmentExpression",
+                                                "operator": "=",
+                                                "left": {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "MemberExpression",
+                                                        "computed": false,
+                                                        "object": {
+                                                            "type": "ThisExpression"
+                                                        },
+                                                        "property": {
+                                                            "type": "Identifier",
+                                                            "name": "nums"
+                                                        }
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "pancakeNum"
+                                                    }
+                                                },
+                                                "right": {
+                                                    "type": "Literal",
+                                                    "value": 0,
+                                                    "raw": "0"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "alternate": null
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "UpdateExpression",
+                                    "operator": "++",
+                                    "argument": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "pancakeNum"
+                                        }
+                                    },
+                                    "prefix": false
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Nums"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "prototype"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "remove"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "from"
+                        },
+                        {
+                            "type": "Identifier",
+                            "name": "amount"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "UpdateExpression",
+                                    "operator": "--",
+                                    "argument": {
+                                        "type": "MemberExpression",
+                                        "computed": true,
+                                        "object": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "ThisExpression"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            }
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "from"
+                                        }
+                                    },
+                                    "prefix": false
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "add"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "amount"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "add"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "BinaryExpression",
+                                            "operator": "-",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "from"
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "amount"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "MemberExpression",
+                        "computed": false,
+                        "object": {
+                            "type": "Identifier",
+                            "name": "Nums"
+                        },
+                        "property": {
+                            "type": "Identifier",
+                            "name": "prototype"
+                        }
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "cl"
+                    }
+                },
+                "right": {
+                    "type": "FunctionExpression",
+                    "id": null,
+                    "params": [
+                        {
+                            "type": "Identifier",
+                            "name": "nums1"
+                        }
+                    ],
+                    "body": {
+                        "type": "BlockStatement",
+                        "body": [
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "nums"
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "MemberExpression",
+                                                "computed": false,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "nums1"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "nums"
+                                                }
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "slice"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "Literal",
+                                                "value": 0,
+                                                "raw": "0"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            {
+                                "type": "ExpressionStatement",
+                                "expression": {
+                                    "type": "AssignmentExpression",
+                                    "operator": "=",
+                                    "left": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "ThisExpression"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "maxNum"
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "nums1"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "maxNum"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    },
+                    "generator": false,
+                    "expression": false
+                }
+            }
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "solve"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "line1"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "line2"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "caseNumber"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "eaterNum"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "parseInt"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "line1"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "pancakes"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "line2"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "split"
+                                        }
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Literal",
+                                            "value": " ",
+                                            "raw": "' '"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "AssignmentExpression",
+                            "operator": "=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "nums"
+                            },
+                            "right": {
+                                "type": "NewExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "Nums"
+                                },
+                                "arguments": []
+                            }
+                        }
+                    },
+                    {
+                        "type": "ForStatement",
+                        "init": {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "i"
+                                    },
+                                    "init": {
+                                        "type": "Literal",
+                                        "value": 0,
+                                        "raw": "0"
+                                    }
+                                }
+                            ],
+                            "kind": "var"
+                        },
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": "<",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "i"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "eaterNum"
+                            }
+                        },
+                        "update": {
+                            "type": "UpdateExpression",
+                            "operator": "++",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "i"
+                            },
+                            "prefix": false
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "AssignmentExpression",
+                                        "operator": "=",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "pancakes"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "i"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "CallExpression",
+                                            "callee": {
+                                                "type": "Identifier",
+                                                "name": "parseInt"
+                                            },
+                                            "arguments": [
+                                                {
+                                                    "type": "MemberExpression",
+                                                    "computed": true,
+                                                    "object": {
+                                                        "type": "Identifier",
+                                                        "name": "pancakes"
+                                                    },
+                                                    "property": {
+                                                        "type": "Identifier",
+                                                        "name": "i"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "ExpressionStatement",
+                                    "expression": {
+                                        "type": "CallExpression",
+                                        "callee": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "add"
+                                            }
+                                        },
+                                        "arguments": [
+                                            {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "pancakes"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "i"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "BinaryExpression",
+                                        "operator": ">",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "pancakes"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "i"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "maxNum"
+                                            }
+                                        }
+                                    },
+                                    "consequent": {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "MemberExpression",
+                                                "computed": false,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "nums"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "maxNum"
+                                                }
+                                            },
+                                            "right": {
+                                                "type": "MemberExpression",
+                                                "computed": true,
+                                                "object": {
+                                                    "type": "Identifier",
+                                                    "name": "pancakes"
+                                                },
+                                                "property": {
+                                                    "type": "Identifier",
+                                                    "name": "i"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "alternate": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "minutes"
+                                },
+                                "init": {
+                                    "type": "CallExpression",
+                                    "callee": {
+                                        "type": "Identifier",
+                                        "name": "calculate2"
+                                    },
+                                    "arguments": [
+                                        {
+                                            "type": "Identifier",
+                                            "name": "nums"
+                                        }
+                                    ]
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ExpressionStatement",
+                        "expression": {
+                            "type": "CallExpression",
+                            "callee": {
+                                "type": "MemberExpression",
+                                "computed": false,
+                                "object": {
+                                    "type": "Identifier",
+                                    "name": "console"
+                                },
+                                "property": {
+                                    "type": "Identifier",
+                                    "name": "log"
+                                }
+                            },
+                            "arguments": [
+                                {
+                                    "type": "BinaryExpression",
+                                    "operator": "+",
+                                    "left": {
+                                        "type": "BinaryExpression",
+                                        "operator": "+",
+                                        "left": {
+                                            "type": "BinaryExpression",
+                                            "operator": "+",
+                                            "left": {
+                                                "type": "Literal",
+                                                "value": "Case #",
+                                                "raw": "\"Case #\""
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "caseNumber"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "Literal",
+                                            "value": ": ",
+                                            "raw": "\": \""
+                                        }
+                                    },
+                                    "right": {
+                                        "type": "Identifier",
+                                        "name": "minutes"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "calculate2"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "nums"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "minSoFar"
+                                },
+                                "init": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "nums"
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "maxNum"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "targetHeight"
+                                },
+                                "init": {
+                                    "type": "MemberExpression",
+                                    "computed": false,
+                                    "object": {
+                                        "type": "Identifier",
+                                        "name": "nums"
+                                    },
+                                    "property": {
+                                        "type": "Identifier",
+                                        "name": "maxNum"
+                                    }
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ForStatement",
+                        "init": {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "targetHeight"
+                                    },
+                                    "init": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "nums"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "maxNum"
+                                        }
+                                    }
+                                }
+                            ],
+                            "kind": "var"
+                        },
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": ">=",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "targetHeight"
+                            },
+                            "right": {
+                                "type": "Literal",
+                                "value": 2,
+                                "raw": "2"
+                            }
+                        },
+                        "update": {
+                            "type": "UpdateExpression",
+                            "operator": "--",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "targetHeight"
+                            },
+                            "prefix": false
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "VariableDeclaration",
+                                    "declarations": [
+                                        {
+                                            "type": "VariableDeclarator",
+                                            "id": {
+                                                "type": "Identifier",
+                                                "name": "minutes"
+                                            },
+                                            "init": {
+                                                "type": "CallExpression",
+                                                "callee": {
+                                                    "type": "Identifier",
+                                                    "name": "calculate"
+                                                },
+                                                "arguments": [
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "nums"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "targetHeight"
+                                                    },
+                                                    {
+                                                        "type": "Identifier",
+                                                        "name": "minSoFar"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "kind": "var"
+                                },
+                                {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "BinaryExpression",
+                                        "operator": "<",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "minutes"
+                                        },
+                                        "right": {
+                                            "type": "Identifier",
+                                            "name": "minSoFar"
+                                        }
+                                    },
+                                    "consequent": {
+                                        "type": "ExpressionStatement",
+                                        "expression": {
+                                            "type": "AssignmentExpression",
+                                            "operator": "=",
+                                            "left": {
+                                                "type": "Identifier",
+                                                "name": "minSoFar"
+                                            },
+                                            "right": {
+                                                "type": "Identifier",
+                                                "name": "minutes"
+                                            }
+                                        }
+                                    },
+                                    "alternate": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "Identifier",
+                            "name": "minSoFar"
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false
+        },
+        {
+            "type": "FunctionDeclaration",
+            "id": {
+                "type": "Identifier",
+                "name": "calculate"
+            },
+            "params": [
+                {
+                    "type": "Identifier",
+                    "name": "n"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "targetHeight"
+                },
+                {
+                    "type": "Identifier",
+                    "name": "minSoFar"
+                }
+            ],
+            "body": {
+                "type": "BlockStatement",
+                "body": [
+                    {
+                        "type": "VariableDeclaration",
+                        "declarations": [
+                            {
+                                "type": "VariableDeclarator",
+                                "id": {
+                                    "type": "Identifier",
+                                    "name": "c"
+                                },
+                                "init": {
+                                    "type": "Identifier",
+                                    "name": "targetHeight"
+                                }
+                            }
+                        ],
+                        "kind": "var"
+                    },
+                    {
+                        "type": "ForStatement",
+                        "init": {
+                            "type": "VariableDeclaration",
+                            "declarations": [
+                                {
+                                    "type": "VariableDeclarator",
+                                    "id": {
+                                        "type": "Identifier",
+                                        "name": "i"
+                                    },
+                                    "init": {
+                                        "type": "MemberExpression",
+                                        "computed": false,
+                                        "object": {
+                                            "type": "Identifier",
+                                            "name": "n"
+                                        },
+                                        "property": {
+                                            "type": "Identifier",
+                                            "name": "maxNum"
+                                        }
+                                    }
+                                }
+                            ],
+                            "kind": "var"
+                        },
+                        "test": {
+                            "type": "BinaryExpression",
+                            "operator": ">",
+                            "left": {
+                                "type": "Identifier",
+                                "name": "i"
+                            },
+                            "right": {
+                                "type": "Identifier",
+                                "name": "targetHeight"
+                            }
+                        },
+                        "update": {
+                            "type": "UpdateExpression",
+                            "operator": "--",
+                            "argument": {
+                                "type": "Identifier",
+                                "name": "i"
+                            },
+                            "prefix": false
+                        },
+                        "body": {
+                            "type": "BlockStatement",
+                            "body": [
+                                {
+                                    "type": "IfStatement",
+                                    "test": {
+                                        "type": "BinaryExpression",
+                                        "operator": "in",
+                                        "left": {
+                                            "type": "Identifier",
+                                            "name": "i"
+                                        },
+                                        "right": {
+                                            "type": "MemberExpression",
+                                            "computed": false,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "n"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "nums"
+                                            }
+                                        }
+                                    },
+                                    "consequent": {
+                                        "type": "BlockStatement",
+                                        "body": [
+                                            {
+                                                "type": "ExpressionStatement",
+                                                "expression": {
+                                                    "type": "AssignmentExpression",
+                                                    "operator": "+=",
+                                                    "left": {
+                                                        "type": "Identifier",
+                                                        "name": "c"
+                                                    },
+                                                    "right": {
+                                                        "type": "BinaryExpression",
+                                                        "operator": "*",
+                                                        "left": {
+                                                            "type": "BinaryExpression",
+                                                            "operator": "-",
+                                                            "left": {
+                                                                "type": "CallExpression",
+                                                                "callee": {
+                                                                    "type": "MemberExpression",
+                                                                    "computed": false,
+                                                                    "object": {
+                                                                        "type": "Identifier",
+                                                                        "name": "Math"
+                                                                    },
+                                                                    "property": {
+                                                                        "type": "Identifier",
+                                                                        "name": "ceil"
+                                                                    }
+                                                                },
+                                                                "arguments": [
+                                                                    {
+                                                                        "type": "BinaryExpression",
+                                                                        "operator": "/",
+                                                                        "left": {
+                                                                            "type": "Identifier",
+                                                                            "name": "i"
+                                                                        },
+                                                                        "right": {
+                                                                            "type": "Identifier",
+                                                                            "name": "targetHeight"
+                                                                        }
+                                                                    }
+                                                                ]
+                                                            },
+                                                            "right": {
+                                                                "type": "Literal",
+                                                                "value": 1,
+                                                                "raw": "1"
+                                                            }
+                                                        },
+                                                        "right": {
+                                                            "type": "MemberExpression",
+                                                            "computed": true,
+                                                            "object": {
+                                                                "type": "MemberExpression",
+                                                                "computed": false,
+                                                                "object": {
+                                                                    "type": "Identifier",
+                                                                    "name": "n"
+                                                                },
+                                                                "property": {
+                                                                    "type": "Identifier",
+                                                                    "name": "nums"
+                                                                }
+                                                            },
+                                                            "property": {
+                                                                "type": "Identifier",
+                                                                "name": "i"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "type": "IfStatement",
+                                                "test": {
+                                                    "type": "BinaryExpression",
+                                                    "operator": ">",
+                                                    "left": {
+                                                        "type": "Identifier",
+                                                        "name": "c"
+                                                    },
+                                                    "right": {
+                                                        "type": "Identifier",
+                                                        "name": "minSoFar"
+                                                    }
+                                                },
+                                                "consequent": {
+                                                    "type": "BlockStatement",
+                                                    "body": [
+                                                        {
+                                                            "type": "ReturnStatement",
+                                                            "argument": {
+                                                                "type": "Identifier",
+                                                                "name": "c"
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                "alternate": null
+                                            }
+                                        ]
+                                    },
+                                    "alternate": null
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "type": "ReturnStatement",
+                        "argument": {
+                            "type": "Identifier",
+                            "name": "c"
+                        }
+                    }
+                ]
+            },
+            "generator": false,
+            "expression": false
+        }
+    ],
+    "sourceType": "script"
+}

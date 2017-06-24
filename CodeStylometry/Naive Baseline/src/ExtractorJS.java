@@ -4,8 +4,9 @@ import java.util.HashSet;
 
 /**
  *
- * @author dns43
- */
+ * @author Mosfiqur Rahman
+ *
+ **/
 public class ExtractorJS extends ExtractorC {
 
 	public ExtractorJS(File program) throws IOException {
@@ -23,20 +24,20 @@ public class ExtractorJS extends ExtractorC {
 	@Override
 	boolean isPrototype(StringBuffer source) {
 		String s = source.toString();
-                //dns43: tests whether source matches
-                // TXT { WHITESPACE or
-                // TXT NEWLINE { WHITESPACE
-		
+		// tests whether source matches
+		// TXT { WHITESPACE or
+		// TXT NEWLINE { WHITESPACE
+
 		if (s.matches(".*\\{[\\w\\W]*") || s.matches(".*\\n\\{[\\w\\W]*")) {
 			return true;
 		}
-		
+
 		if (s.matches("for[\\w\\W]*") || s.matches("while[\\w\\W]*")
 				|| s.matches("do [\\w\\W]*") || s.matches("struct[\\w\\W]*")
 				|| s.matches("if[\\w\\W]*") || s.matches("else[\\w\\W]*")
 				|| s.matches("switch[\\w\\W]*")) {
 			return true; // notice the space after the "do" regex (avoids
-							// matching "double"
+			// matching "double"
 		}
 		if (s.matches("static[\\w\\W]*") || s.matches("extern[\\w\\W]*")
 				|| s.matches("unsigned[\\w\\W]*")

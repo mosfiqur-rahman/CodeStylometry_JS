@@ -1,60 +1,50 @@
-12 folds, seed 1: 
-Correctly Classified Instances          29              100      %
-Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
-Mean absolute error                      0.1198
-Root mean squared error                  0.1905
-Relative absolute error                 48.1345 %
-Root relative squared error             53.3959 %
-Total Number of Instances               29     
-
-12 folds, seed 2: 
-Correctly Classified Instances          29              100      %
-Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
-Mean absolute error                      0.1205
-Root mean squared error                  0.19  
-Relative absolute error                 48.4322 %
-Root relative squared error             53.2829 %
-Total Number of Instances               29     
-
-12 folds, seed 3: 
+9 folds, seed 1: 
 Correctly Classified Instances          28               96.5517 %
 Incorrectly Classified Instances         1                3.4483 %
 Kappa statistic                          0.9595
-Mean absolute error                      0.1195
-Root mean squared error                  0.1896
-Relative absolute error                 47.9993 %
-Root relative squared error             53.1615 %
+Mean absolute error                      0.1178
+Root mean squared error                  0.1875
+Relative absolute error                 47.4739 %
+Root relative squared error             52.7396 %
 Total Number of Instances               29     
 
-12 folds, seed 4: 
-Correctly Classified Instances          29              100      %
-Incorrectly Classified Instances         0                0      %
-Kappa statistic                          1     
+9 folds, seed 2: 
+Correctly Classified Instances          28               96.5517 %
+Incorrectly Classified Instances         1                3.4483 %
+Kappa statistic                          0.9595
 Mean absolute error                      0.1169
-Root mean squared error                  0.1876
-Relative absolute error                 46.9519 %
-Root relative squared error             52.5888 %
+Root mean squared error                  0.1874
+Relative absolute error                 47.1319 %
+Root relative squared error             52.7043 %
 Total Number of Instances               29     
 
-12 folds, seed 5: 
-Correctly Classified Instances          28               96.5517 %
-Incorrectly Classified Instances         1                3.4483 %
-Kappa statistic                          0.9595
-Mean absolute error                      0.1174
-Root mean squared error                  0.1876
-Relative absolute error                 47.1638 %
-Root relative squared error             52.6152 %
-Total Number of Instances               29     
-
-12 folds, seed 6: 
+9 folds, seed 3: 
 Correctly Classified Instances          29              100      %
 Incorrectly Classified Instances         0                0      %
 Kappa statistic                          1     
+Mean absolute error                      0.1189
+Root mean squared error                  0.1902
+Relative absolute error                 47.9243 %
+Root relative squared error             53.4991 %
+Total Number of Instances               29     
+
+9 folds, seed 4: 
+Correctly Classified Instances          28               96.5517 %
+Incorrectly Classified Instances         1                3.4483 %
+Kappa statistic                          0.9595
+Mean absolute error                      0.1143
+Root mean squared error                  0.1821
+Relative absolute error                 46.0648 %
+Root relative squared error             51.2219 %
+Total Number of Instances               29     
+
+9 folds, seed 5: 
+Correctly Classified Instances          28               96.5517 %
+Incorrectly Classified Instances         1                3.4483 %
+Kappa statistic                          0.9594
 Mean absolute error                      0.1149
-Root mean squared error                  0.1848
-Relative absolute error                 46.1768 %
-Root relative squared error             51.8069 %
+Root mean squared error                  0.1841
+Relative absolute error                 46.329  %
+Root relative squared error             51.8011 %
 Total Number of Instances               29     
 

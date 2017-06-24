@@ -5,7 +5,7 @@ import java.util.Set;
 /**
  * A data structure emulating a set that counts the number of repeated elements.
  * 
- * @author Andrew Liu
+ * @author Mosfiqur Rahman
  *
  *@param <T> The type of element the MultiSet holds.
  */

@@ -28,7 +28,7 @@ public class ARFFFactory3 extends ARFFFactory2 {
 		x.append(Math.log(f.getWhiteSpace().get(WhiteSpace.tab) / len) + ",");
 		x.append(Math.log(f.getWhiteSpace().get(WhiteSpace.space) / len) + ",");
 		x.append(stdDev(f.numFunctionParams()) + ",");
-		//dns43: guess its faste to generate getControlStructures Map once, but only relevant for long code
+		// guess its faste to generate getControlStructures Map once, but only relevant for long code
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.ifStatement) / len) + ",");
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.elifStatement) / len) + ",");
 		x.append(Math.log(f.getControlStructures().get(ControlStatement.elseStatement) / len) + ",");
