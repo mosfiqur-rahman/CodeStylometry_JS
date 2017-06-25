@@ -8,7 +8,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.SortedMap;
 import java.util.TreeMap;
-//Author, Ariel Stolerman, code taken from the doppelganger finder project
+//code taken from the doppelganger finder project
 
 public class RelaxedEvaluation extends Evaluation {
 	protected int relaxParam;

@@ -21,7 +21,7 @@ import java.io.FileWriter;
 import java.util.*;
 
 
-//dns43: this is where the magic happens
+// this is where the magic happens
 
 public class AuthorClassificationRelaxed {
 
@@ -39,22 +39,20 @@ public class AuthorClassificationRelaxed {
 		String fileName  ="textFile";
 		
 
-		//dns43: for Authors 9-10, why?
 		for(int authorNo=9; authorNo<10; authorNo++)
 		{
-			//dns43: for files 9-10, why?
 			for(numberFiles=9; numberFiles<10; numberFiles++)
 			{
-				//dns43: from 28 to 558 in steps of 9
-				//dns43: cuz there are 9 files per Author?
+				// from 28 to 558 in steps of 9
+				// cuz there are 9 files per Author?
 				for (int x=28; x<=(18*31); x=x+9) {
 					String arffFile = "path";
-					//dns43: write a file "textFile" mentioning Numbers of Files per Author
+					// write a file "textFile" mentioning Numbers of Files per Author
 					Util.writeFile(numberFiles + "FilesPerAuthor: \n", fileName, true);
-					//dns43: for each PAR (here a relaxed amount)
+					// for each PAR (here a relaxed amount)
 					for (int relaxPar = 5; relaxPar <= endRelax; relaxPar++)
 					{
-						//dns43: reset vars
+						// reset vars
 						total = 0;
 						average = 0;
 
@@ -62,7 +60,7 @@ public class AuthorClassificationRelaxed {
 						{
 							int foldNumber = numberFiles;
 
-							//dns43: create empty random forest
+							// create empty random forest
 							RandomForest cls = new RandomForest();
 
 							Instances data = new Instances(new FileReader(arffFile));

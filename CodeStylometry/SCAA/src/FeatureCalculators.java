@@ -107,7 +107,34 @@ public class FeatureCalculators {
 
 		return words;
 	}
-   
+
+	public static String[] uniqueJSDepASTTypes(String dirPath) throws IOException, InterruptedException{
+		//should be listASTFiles here
+		List test_file_paths = Util.listASTFiles(dirPath);
+		HashSet<String> uniqueWords = new HashSet<String>();
+
+		for(int i=0; i< test_file_paths.size(); i++){
+			String filePath = test_file_paths.get(i).toString();
+			// testing purpose; we shoud discuss if we use file types .ast/.dep or .txt
+			//filePath = "C:\\Users\\dns43\\Documents\\NetBeansProjects\\CodeStylometry\\testJS\\js_ast.txt";
+			String inputText =Util.readFile(filePath);
+			String[] lines = inputText.split("\n");
+
+			for(int l = 0; l<lines.length; l++){
+				if(lines[l].contains("type")){
+					lines[l] = lines[l].replaceAll(" ","");
+					lines[l] = lines[l].replace("\"", "");
+					lines[l] = lines[l].replace(":", "");
+					lines[l] = lines[l].replace("type", "");
+					lines[l] = lines[l].replace(",", "");
+					uniqueWords.add(lines[l]);
+				}
+			}}
+		String[] words = uniqueWords.toArray(new String[0]);
+		return words;
+	}
+
+
 	public static String[] wordUnigramsJS(String dirPath) throws IOException
 	{
 		List test_file_paths = Util.listJSFiles(dirPath);
@@ -265,8 +292,80 @@ public class FeatureCalculators {
 									+StringUtils.countMatches(featureText, str4);
 		}
 		return counter;
-	}   
-	
+	}
+
+
+
+
+
+
+	public static float DepASTTypeJSIDF (String datasetDir, String ASTType ) throws IOException
+	{
+
+		float counter = 0;
+		float IDFcounter = 0;
+
+		File file = new File(datasetDir);
+		String[] directories = file.list(new FilenameFilter() {
+			@Override
+			public boolean accept(File current, String name)
+			{
+				return new File(current, name).isDirectory();
+			}
+		});
+		float dirLen = directories.length;
+		for(int j=0; j< dirLen; j++)
+		{
+			String authorName = directories[j];
+			List test_file_paths = Util.listTextFiles(datasetDir+authorName+"/");
+			for(int i=0; i< test_file_paths.size(); i++)
+			{
+				String featureText = Util.readFile(test_file_paths.get(i).toString());
+				String str = ASTType;
+				int termFrequencyAuthor = StringUtils.countMatches(featureText, str);
+				if (termFrequencyAuthor>0)
+					counter++;
+			}
+			if(counter>0)
+				IDFcounter++;
+
+		}
+		if (IDFcounter==0)
+		{return 0;}
+		return (float) ((Math.log(dirLen/IDFcounter))/ (Math.log(2)));
+
+	}
+	//use this for dep file with label AST
+	public static float [] DepASTTypeJSTFIDF (String featureText, String datasetDir, String[] DepASTTypes ) throws IOException
+	{
+		float symbolCount = DepASTTypes.length;
+		float idf = 0;
+		float[] tf = DepASTTypeTF(featureText, DepASTTypes);
+		float [] counter = new float[(int) symbolCount];
+		//   tf = StringUtils.countMatches(featureText, str);
+
+		for (int i =0; i<symbolCount; i++){
+			//if case insensitive, make lowercase
+			// String str = APISymbols[i].toString().toLowerCase();
+			//	 String str = DepASTTypes[i].toString();
+
+			//if case insensitive, make lowercase
+			// strcounter = StringUtils.countMatches(featureText.toLowerCase(), str);
+			if ((tf[i] != 0) ){
+				idf = DepASTTypeJSIDF(datasetDir, DepASTTypes[i].toString());}
+			else {
+				idf =0;
+			}
+			if ((tf[i] != 0) && (idf != 0))
+				counter[i] = tf[i] * idf;
+			else
+				counter[i]=0;
+		}
+		return counter;
+	}
+
+
+
 	public static float DepASTTypeIDF (String datasetDir, String ASTType ) throws IOException
 	{    
 		float counter = 0;
@@ -464,6 +563,18 @@ public class FeatureCalculators {
 			System.out.println(word + " " + (Integer) hm.get(word));
 		}
 	}
+
+
+	public static int functionIDJSCount (String featureText)
+	{		   int counter = 0;
+
+		String str = "function";
+		counter = StringUtils.countMatches(featureText, str);
+		return counter;
+
+	}
+
+
 
 	public static int functionIDCount (String featureText)
 	{

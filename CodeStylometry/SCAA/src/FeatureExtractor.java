@@ -18,17 +18,20 @@ import org.apache.commons.io.FileUtils;
 
 public class FeatureExtractor 
 {
-	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException 
+	public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException, InterruptedException
 	{
-		
-		String [] JSKeywords = {	"do", "if", "in", "for", "let","new", "try", "var", "case", "else", "enum", "eval", "this", "true", "void",
-									"with", "await", "break", "catch", "class", "const", "false", "super", "throw","while", "yield",
-									"delete", "export", "import", "public","return","static", "switch", "typeof", "default", "extends",
-									"finally","package", "private", "continue", "debugger", "function", "arguments","interface",
-									"protected", "implements", "instanceof", "await","int", "byte", "goto", "long", "final", "float",
-									"short", " double", " native", " throws", " boolean", " abstract", " volatile", " transient",
-									"synchronized", " NaN", "Infinity", " undefined"
-								};
+
+		String [] JSKeywords = {"do", "if", "in", "for", "let",
+				"new", "try", "var", "case", "else", "enum", "eval", "this", "true", "void",
+				"with", "await", "break", "catch", "class", "const", "false", "super", "throw",
+				"while", "yield", "delete", "export", "import", "public", "return",
+				"static", "switch", "typeof", "default", "extends", "finally",
+				"package", "private", "continue", "debugger", "function", "arguments",
+				"interface", "protected", "implements", "instanceof", "await"};
+		// delete comment to add older version's keywords
+		//,"int", "byte", "goto", "long", "final", "float", "short", " double"
+		//, " native", " throws", " boolean", " abstract", " volatile", " transient", "synchronized"
+		//, " NaN", " Infinity", " undefined};
 		  
 		  
 					//Specifying the test arff filename
@@ -46,17 +49,17 @@ public class FeatureExtractor
 		       		for(numberFiles = 1 ; numberFiles < 2; numberFiles++)
 		       		{
 		       			
-		       			FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4fileNB.arff"), "");
+		       			FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff"), "");
 		       			
-		       			String output_filename = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4file.arff" ;
+		       			String output_filename =  "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff" ;
 		    			
 		       			
-		       			String test_dir = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/7authors4file/";
+		       			String test_dir = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/8authors4file/";
 
 
 		    			List test_file_paths = Util.listTextFiles(test_dir);
 
-		    			System.out.println(test_file_paths);
+		    		// ***	//System.out.println(test_file_paths);
 
 		    			String text = "";
 		    			// first specify relation
@@ -86,10 +89,12 @@ public class FeatureExtractor
 	Util.writeFile("@attribute 'ASTFunctionIDCount' numeric"+"\n", output_filename, true);
 	Util.writeFile("@attribute 'getMaxDepthASTLeaf' numeric"+"\n", output_filename, true);
 
-	//Util.writeFile("@attribute 'AverageASTDepth' numeric"+"\n", output_filename, true);
+	Util.writeFile("@attribute 'AverageASTDepth' numeric"+"\n", output_filename, true);
 
-    //matches .txt and .doc files in test_dir unique patterns matching "u'(.*?)'", what ever that means
+	//matches .txt and .doc files in test_dir unique patterns matching "u'(.*?)'", what ever that means
+
     String[] APIsymbols = FeatureCalculators.uniqueAPISymbols(test_dir);
+				       // System.out.println(APIsymbols);
     //uniqueASTTypes does not contain user input, such as function and variable names
     //uniqueDepASTTypes contain user input, such as function and variable names
     //if only interested in syntactic features use this if the dep file contains user input    
@@ -98,41 +103,49 @@ public class FeatureExtractor
        
     
     	//matches .dep files in test_dir for unique patterns matching regex "([\\w']+)"
-       String[] ASTtypes = FeatureCalculators.uniqueDepASTTypes(test_dir);
-       //matches .js files for everything that appears only once (whitespace as seperator)
-       String[] wordUnigramsJS =FeatureCalculators.wordUnigramsJS(test_dir);
-	
-       //String[] ASTNodeBigrams = BigramExtractor.getASTNodeBigrams(test_dir);
-    	
+
+		String[] ASTtypes = FeatureCalculators.uniqueJSDepASTTypes(test_dir);
+		//System.out.println(ASTtypes);
+		//matches .js files for everything that appears only once (whitespace as seperator)
+
+		String[] wordUnigramsJS =FeatureCalculators.wordUnigramsJS(test_dir);
+		//System.out.println(ASTNodeBigrams);
+
+       String[] ASTNodeBigrams = BigramExtractor.getJSASTNodeBigrams(test_dir);
+       //System.out.println(ASTNodeBigrams);
     
        for(int i = 0 ; i < APIsymbols.length ; i++)
 		{
 			{
-				Util.writeFile("@attribute 'APIsymbols["+i+"] ' numeric" + "\n", output_filename, true);
+				APIsymbols[i] = APIsymbols[i].replace("'", "apostrophesymbol");
+				Util.writeFile("@attribute 'APISymbolTF "+i+"=["+APIsymbols[i]+"]' numeric" + "\n", output_filename, true);
 			}
 		}
 
 		for(int i = 0 ; i < APIsymbols.length ; i++)
 		{
 			{
-				Util.writeFile("@attribute 'APIsymbolsTFIDF["+i+"] ' numeric" + "\n", output_filename, true);
+				APIsymbols[i] = APIsymbols[i].replace("'", "apostrophesymbol");
+				Util.writeFile("@attribute 'APISymbolTFIDF "+i+"=["+APIsymbols[i]+"]' numeric" + "\n", output_filename, true);
 			}
 		}
 
 		for(int i = 0 ; i < ASTtypes.length ; i++)
 		{
 			{
-				Util.writeFile("@attribute 'ASTtypes["+i+"] ' numeric" + "\n", output_filename, true);
+				ASTtypes[i] = ASTtypes[i].replace("'", "apostrophesymbol");
+				Util.writeFile("@attribute 'ASTTypeTF "+i+"=["+ASTtypes[i]+"]' numeric" + "\n", output_filename, true);
 			}
 		}
 
 		for(int i = 0 ; i < ASTtypes.length ; i++)
 		{
 			{
-				Util.writeFile("@attribute 'ASTtypesTFIDF["+i+"] ' numeric" + "\n", output_filename, true);
+				ASTtypes[i] = ASTtypes[i].replace("'", "apostrophesymbol");
+				Util.writeFile("@attribute 'ASTTypeTFIDF "+i+"=["+ASTtypes[i]+"] ' numeric" + "\n", output_filename, true);
 			}
 		}
-/*
+
 		for(int i = 0 ; i < ASTNodeBigrams.length ; i++)
 		{
 			{
@@ -140,12 +153,12 @@ public class FeatureExtractor
 						Util.writeFile("@attribute 'ASTNodeBigramsTF "+i+"=["+ASTNodeBigrams[i]+"]' numeric"+"\n", output_filename, true);
 			}
 		}
-*/		
+
 		for(int i = 0 ; i < wordUnigramsJS.length ; i++)
 		{
 			{
 						wordUnigramsJS[i] = wordUnigramsJS[i].replace("'", "apostrophesymbol");
-        				Util.writeFile("@attribute 'wordUnigramsJS "+i+"=["+wordUnigramsJS[i]+"]' numeric"+"\n", output_filename, true);
+        				Util.writeFile("@attribute 'wordUnigramsTF "+i+"=["+wordUnigramsJS[i]+"]' numeric"+"\n", output_filename, true);
 			}
 		}		
     	  
@@ -241,15 +254,19 @@ public class FeatureExtractor
 		authorFileName= new File(test_file_paths.get(i).toString());
 		String authorName= authorFileName.getParentFile().getName();
 
-		System.out.println(test_file_paths.get(i));
-		System.out.println(authorName);
+		//System.out.println(i +" -th file: "+test_file_paths.get(i));
+		//System.out.println("authorname: "+authorName);
+		//System.out.println(test_file_paths.get(i));
+		//System.out.println(authorName);
 
 		File fileJSID = new File(test_JS_paths.get(i).toString());
 		String fileNameID = fileJSID.getName();
 
 		Util.writeFile(fileNameID+",", output_filename, true);
-		Util.writeFile(FeatureCalculators.functionIDCount(featureText)+",", output_filename, true);
+		Util.writeFile(FeatureCalculators.functionIDJSCount(featureText)+",", output_filename, true);
+
 		String ASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"ast");
+
 		//String DepASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"dep");
 
 		String DepASTText = Util.readFile(test_file_paths.get(i).toString().substring(0,testIDlength-3)+"ast");
@@ -257,7 +274,7 @@ public class FeatureExtractor
 
 		Util.writeFile(FeatureCalculators.CFGNodeCount(ASTText)+",", output_filename, true);
 		Util.writeFile(FeatureCalculators.ASTFunctionIDCount(ASTText)+",", output_filename, true);
-		Util.writeFile(DepthASTNode.getMaxDepthASTLeaf(DepASTText, ASTtypes)+",", output_filename, true);
+		Util.writeFile(DepthASTNode.getJSMaxDepthASTLeaf(DepASTText, ASTtypes)+",", output_filename, true);
 
 		//Separated :		
 		Util.writeFile(FeatureCalculators.averageASTDepth(ASTText)+",", output_filename, true);
@@ -296,14 +313,14 @@ public class FeatureExtractor
 		}	
 
 		//Get frequency of each ASTnodebigram in JS source file's AST	 
-		/*
-		float[] bigramCount = BigramExtractor.getASTNodeBigramsTF(DepASTText, ASTNodeBigrams );
+
+		float[] bigramCount = BigramExtractor.getJSASTNodeBigramsTF(DepASTText, ASTNodeBigrams );
 
 		for (int j=0; j<ASTNodeBigrams.length; j++)
 		{
 			Util.writeFile(bigramCount[j] +",", output_filename, true);
 		}	    
-    	*/
+
 		//Get count of each wordUnigram in JS source file	 
 		float[] wordUniCount = FeatureCalculators.WordUnigramTF(sourceCode, wordUnigramsJS);
 
@@ -328,7 +345,7 @@ public class FeatureExtractor
 			Util.writeFile(DepastTypeTFIDF[j]+",", output_filename, true);
 		}	
 
-		float [] depFeature =DepthASTNode.getAvgDepthASTNode(DepASTText,ASTtypes);
+		float [] depFeature =DepthASTNode.getJSAvgDepthASTNode(DepASTText,ASTtypes);
 
 			for(int k=0;k<depFeature.length;k++)
 		{

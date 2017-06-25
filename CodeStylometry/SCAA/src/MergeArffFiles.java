@@ -17,7 +17,7 @@ import org.apache.commons.io.FileUtils;
  * (eg Writeprints limited, save to arff files in the Analysis tab) 
  *
  *
- * @author Aylin Caliskan-Islam (ac993@drexel.edu)
+ * @author Mosfiqur Rahman (mr986@drexel.edu)
  */
 public class MergeArffFiles {
 
