@@ -14,8 +14,8 @@ public class AuthorAttributionDemo {
 	
 	public static void main(String args[]){
 		//String trainName = null, testName = null, resultName = null;
-		String trainName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff",
-				testName = null, resultName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/new1_result.txt";
+		String trainName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final.arff",
+				testName = null, resultName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final_result.txt";
 		boolean cv = false;
 		//int minSeed = 0, numFolds = 0, maxSeed = 0, numSeeds = 0;
 		int minSeed = 1, numFolds = 4, maxSeed = 3, numSeeds = 3;

@@ -36,9 +36,9 @@ public class MergeArffFilesNew {
     public static void main(String[] args) throws Exception{
     	 
 
-            String file2 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff";
+            String file2 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/17authorsYfiles.arff";
 
-            String file1 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4filesNB.arff";
+            String file1 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/17authorsYfilesNB.arff";
 
 	        FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff"), "");
             String outputArffName ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff";

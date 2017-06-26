@@ -265,7 +265,8 @@
 @attribute 'wordUnigramsTF 140=[console.log(l,]original' numeric
 @attribute 'wordUnigramsTF 141=[p.slice(0);]original' numeric
 @attribute 'wordUnigramsTF 142=[data.split]original' numeric
-@attribute 'wordUnigramsTF 143=[(strRawContents.indexOf("")]original' numeric
+@attribute 'wordUnigramsTF 143=[(strRawContents.indexOf("
+")]original' numeric
 @attribute 'wordUnigramsTF 144=[1];]original' numeric
 @attribute 'wordUnigramsTF 145=[reduceX(X,]original' numeric
 @attribute 'wordUnigramsTF 146=[!==]original' numeric
@@ -805,7 +806,8 @@
 @attribute 'wordUnigramsTF 680=[if(!noMoreSlice)]original' numeric
 @attribute 'wordUnigramsTF 681=[time]original' numeric
 @attribute 'wordUnigramsTF 682=[eaterNum);]original' numeric
-@attribute 'wordUnigramsTF 683=[apostrophesymbolapostrophesymbol).replace(//g,]original' numeric
+@attribute 'wordUnigramsTF 683=[apostrophesymbolapostrophesymbol).replace(/
+/g,]original' numeric
 @attribute 'wordUnigramsTF 684=["−1":"−k",]original' numeric
 @attribute 'wordUnigramsTF 685=[x[i]);]original' numeric
 @attribute 'wordUnigramsTF 686=[Math.ceil(max]original' numeric
@@ -875,7 +877,8 @@
 @attribute 'wordUnigramsTF 750=[heap[right]]original' numeric
 @attribute 'wordUnigramsTF 751=[console.log(">>>",left,str,sign,goal,depth);]original' numeric
 @attribute 'wordUnigramsTF 752=[ii)]original' numeric
-@attribute 'wordUnigramsTF 753=[strRawContents.replace("",]original' numeric
+@attribute 'wordUnigramsTF 753=[strRawContents.replace("
+",]original' numeric
 @attribute 'wordUnigramsTF 754=[onload()]original' numeric
 @attribute 'wordUnigramsTF 755=[run:]original' numeric
 @attribute 'wordUnigramsTF 756=[num_eatings)]original' numeric
@@ -1385,7 +1388,8 @@
 @attribute 'wordUnigramsTF 1260=[Math.floor(top/2);]original' numeric
 @attribute 'wordUnigramsTF 1261=[cakes[i];]original' numeric
 @attribute 'wordUnigramsTF 1262=[=0;]original' numeric
-@attribute 'wordUnigramsTF 1263=[apostrophesymbol);]original' numeric
+@attribute 'wordUnigramsTF 1263=[	
+apostrophesymbol);]original' numeric
 @attribute 'wordUnigramsTF 1264=[catch]original' numeric
 @attribute 'wordUnigramsTF 1265=[nextOperand]original' numeric
 @attribute 'wordUnigramsTF 1266=["−i",]original' numeric

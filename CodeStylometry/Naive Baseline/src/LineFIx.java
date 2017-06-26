@@ -12,7 +12,7 @@ public class LineFIx
 
 	public static void main(String args[]) throws FileNotFoundException
 	{
-		File file = new File("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/sample.arff");
+		File file = new File("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff");
 
 		Scanner scan = new Scanner(file);
 
@@ -41,7 +41,11 @@ public class LineFIx
 		{
 			String store = word_list.get(i);
 
-			while(!store.equals(match))
+			if(store.equals(match))
+			{
+				break;
+			}
+			else
 			{
 				if (store.length() > 0)
 				{
@@ -51,13 +55,31 @@ public class LineFIx
 					}
 					else
 					{
-
-						System.out.println(store);
+						String temp = word_list.get(i-1) + word_list.get(i);
+						word_list.set(i, temp);
+						word_list.remove(i-1);
+						//System.out.println(store);
 						continue;
 					}
 				}
 			}
-			break;
+		}
+
+		try
+		{
+			PrintWriter writer = new PrintWriter("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final.arff", "UTF-8");
+
+			for (int i = 0; i < word_list.size(); i++)
+			{
+				writer.println(word_list.get(i));
+			}
+			System.out.println("Successfully written to /home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final.arff");
+			writer.close();
+
+		}
+		catch (IOException e)
+		{
+			System.out.println("Error while writing in the file!!!");
 		}
 
 	}

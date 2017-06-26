@@ -2,17 +2,216 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9009d72d-c905-455e-8109-c9df6b844dac" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/dijkstra.ast" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/dijkstra.dot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/dijkstra.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/dijkstra.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FileProcess.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam1.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam1.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam10.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam10.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam11.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam11.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam11.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam12.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam12.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam12.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam13.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam13.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam13.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam14.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam14.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam14.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam15.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam15.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam15.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam15.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam16.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam16.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam16.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam17.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam17.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam17.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam17.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam18.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam18.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam18.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam18.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam19.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam19.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam19.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam19.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam2.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam2.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam3.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam3.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam4.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam4.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam5.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam5.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam6.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam6.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam7.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam7.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam8.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam8.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam9.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam9.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/jimbly/codejam9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS3.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS3.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS8.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS8.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/rw251/UPLOADTHIS8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts1.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts1.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts10.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts10.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts10.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts11.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts11.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts11.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts11.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts12.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts12.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts12.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts13.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts13.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts13.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts13.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts14.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts14.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts14.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts14.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts2.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts2.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts3.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts3.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts4.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts4.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts4.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts5.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts5.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts5.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts6.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts6.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts6.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts7.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts7.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts7.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts8.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts8.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts8.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts8.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts9.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts9.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts9.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/yairchu/rts9.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/dijkstra.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/dijkstra.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/dijkstra.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/pancakes.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/pancakes.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/pancakes.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation_l.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation_l.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/azenyem/standing_ovation_l.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_0/code.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_0/code.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_0/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_0/code.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_1/code.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_1/code.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_1/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_1/code.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_0_1/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_1_0/code.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_1_0/code.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_1_0/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_1_0/code.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_1_0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_2_0/code.ast" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_2_0/code.dot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_2_0/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_2_0/code.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/7authors4file/dobuki/dobuki_2_0/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/dijkstra1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/pancakes.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/standing_ovation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/azenyem/standing_ovation1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dobuki/code.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dobuki/code1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dobuki/code2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dobuki/code3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dushanr/problem_b.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dushanr/problem_c.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dushanr/program.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/dushanr/program1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/entertainyou/dijkstra.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/entertainyou/pc3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/entertainyou/so.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/entertainyou/so1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/jimbly/codejam.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/jimbly/proba.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/jimbly/probb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/jimbly/probc1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/mwsam/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/mwsam/index1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/mwsam/index2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/mwsam/index3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/vskarine/problemA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/vskarine/problemA1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/vskarine/problemB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/js_dataset/8authors4file/vskarine/problemC.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/2authors4files.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/2authors4files.arff" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/8authorsYfiles.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/8authorsYfiles.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/17authorsYfiles.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/17authorsYfiles.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/17authorsYfilesNB.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/17authorsYfilesNB.arff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/mixed.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/mixed.arff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/sample.arff" afterPath="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/sample.arff" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/main.js" afterPath="$PROJECT_DIR$/CodeStylometry/Dataset Creator/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java" afterPath="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java" afterPath="$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java" />
     </list>
@@ -47,7 +246,7 @@
         <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureCalculators.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
-              <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
               <folding>
                 <element signature="e#3016#3024#0" expanded="true" />
                 <element signature="e#8355#8356#0" expanded="true" />
@@ -60,7 +259,7 @@
       <file leaf-file-name="AuthorAttributionDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="224">
               <caret line="16" column="109" lean-forward="false" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
               <folding />
             </state>
@@ -70,25 +269,38 @@
       <file leaf-file-name="FeatureExtractor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="53" column="146" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="146" />
+            <state relative-caret-position="154">
+              <caret line="56" column="138" lean-forward="false" selection-start-line="56" selection-start-column="138" selection-end-line="56" selection-end-column="138" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#FeatureExtractor#0" expanded="true" />
-                <marker date="1498436890513" expanded="false" signature="13607:13615" ph="&lt;~&gt;" />
+                <marker date="1498443583112" expanded="false" signature="13608:13616" ph="&lt;~&gt;" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LineFIx.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LineFIx.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+            <state relative-caret-position="140">
+              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;class#LineFIx#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileProcess.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FileProcess.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#FileProcess#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,7 +310,7 @@
         <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
-              <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
+              <caret line="23" column="113" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -107,8 +319,8 @@
       <file leaf-file-name="MergeArffFilesNew.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
+            <state relative-caret-position="131">
+              <caret line="38" column="105" lean-forward="false" selection-start-line="38" selection-start-column="105" selection-end-line="38" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +332,7 @@
         <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="473">
-              <caret line="659" column="44" lean-forward="true" selection-start-line="659" selection-start-column="44" selection-end-line="659" selection-end-column="44" />
+              <caret line="659" column="44" lean-forward="false" selection-start-line="659" selection-start-column="44" selection-end-line="659" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -130,7 +342,7 @@
         <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/WholeWordIndexFinder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+              <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -186,11 +398,13 @@
         <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureCalculators.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/DepthASTNode.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java" />
-        <option value="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java" />
         <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java" />
-        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/FileProcess.java" />
+        <option value="$PROJECT_DIR$/CodeStylometry/SCAA/src/FileProcess.java" />
       </list>
     </option>
   </component>
@@ -202,7 +416,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="18" />
-    <option name="width" value="960" />
+    <option name="width" value="966" />
     <option name="height" value="1062" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -342,7 +556,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LineFIx">
+  <component name="RunManager" selected="Application.FileProcess ">
     <configuration default="false" name="FeatureExtractor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FeatureExtractor" />
@@ -385,21 +599,6 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="SCAA" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="LineFIx" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="LineFIx" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Naive Baseline" />
       <envs />
       <method />
     </configuration>
@@ -878,19 +1077,33 @@
       <envs />
       <method />
     </configuration>
+    <configuration default="false" name="FileProcess " type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="FileProcess" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SCAA" />
+      <envs />
+      <method />
+    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.FeatureExtractor" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AuthorAttributionDemo" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Driver" />
-      <item index="3" class="java.lang.String" itemvalue="Application.MergeArffFilesNew" />
-      <item index="4" class="java.lang.String" itemvalue="Application.LineFIx" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Driver" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FileProcess " />
+      <item index="2" class="java.lang.String" itemvalue="Application.FeatureExtractor" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AuthorAttributionDemo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.MergeArffFilesNew" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.LineFIx" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AuthorAttributionDemo" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MergeArffFilesNew" />
-        <item index="3" class="java.lang.String" itemvalue="Application.FeatureExtractor" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.MergeArffFilesNew" />
+        <item index="1" class="java.lang.String" itemvalue="Application.FeatureExtractor" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AuthorAttributionDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -918,12 +1131,12 @@
       <workItem from="1497813744348" duration="51000" />
       <workItem from="1497813879403" duration="5074000" />
       <workItem from="1497819340307" duration="682000" />
-      <workItem from="1497820078540" duration="58738000" />
+      <workItem from="1497820078540" duration="69401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67547000" />
+    <option name="totallyTimeSpent" value="78210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -935,7 +1148,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="18" width="960" height="1062" extended-state="4" />
+    <frame x="0" y="18" width="966" height="1062" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -948,12 +1161,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930514" sideWeight="0.50625" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18287526" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30972517" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12604167" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1252588" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -986,119 +1199,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="uml://JAVA/DepthASTNode">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>DepthASTNode</OriginalElement>
-          <nodes>
-            <node x="425.0" y="311.0">LevenshteinDistance</node>
-            <node x="482.0" y="691.0">Util</node>
-            <node x="444.5" y="79.0">java.lang.Runnable</node>
-            <node x="181.25" y="0.0">weka.core.Summarizable</node>
-            <node x="0.0" y="390.0">WholeWordIndexFinder</node>
-            <node x="92.0" y="158.0">RelaxedEvaluation</node>
-            <node x="420.0" y="0.0">java.lang.FunctionalInterface</node>
-            <node x="181.0" y="617.0">FeatureExtractor</node>
-            <node x="399.0" y="158.0">FeatureExtractorConcurrent</node>
-            <node x="0.0" y="543.0">DistanceCalculations</node>
-            <node x="0.0" y="617.0">ProblemSetWriter</node>
-            <node x="386.0" y="543.0">FeatureCalculators</node>
-            <node x="196.0" y="543.0">MergeArffFilesNew</node>
-            <node x="112.0" y="79.0">weka.classifiers.Evaluation</node>
-            <node x="20.0" y="469.0">DepthASTNode</node>
-            <node x="336.0" y="691.0">CheckFiles</node>
-            <node x="0.0" y="237.0">AuthorClassification</node>
-            <node x="208.0" y="311.0">FeatureExtractorInfoGain</node>
-            <node x="572.0" y="543.0">RemoveComments</node>
-            <node x="531.0" y="617.0">BigramExtractor</node>
-            <node x="169.0" y="691.0">MergeArffFiles</node>
-            <node x="167.0" y="237.0">AuthorClassificationRelaxed</node>
-            <node x="0.0" y="691.0">DatasetCreator</node>
-            <node x="32.25" y="0.0">weka.core.RevisionHandler</node>
-            <node x="23.0" y="311.0">IndexWrapper</node>
-            <node x="357.0" y="617.0">EsprimaWrapper</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="DepthASTNode" target="WholeWordIndexFinder">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="AuthorClassificationRelaxed" target="RelaxedEvaluation">
-              <point x="-46.75" y="-14.5" />
-              <point x="213.75" y="212.0" />
-              <point x="197.0" y="212.0" />
-              <point x="35.0" y="14.5" />
-            </edge>
-            <edge source="java.lang.Runnable" target="java.lang.FunctionalInterface">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="AuthorClassification" target="weka.classifiers.Evaluation">
-              <point x="-36.75" y="-14.5" />
-              <point x="36.75" y="212.0" />
-              <point x="47.0" y="212.0" />
-              <point x="47.0" y="133.0" />
-              <point x="128.66666666666666" y="133.0" />
-              <point x="-33.33333333333334" y="14.5" />
-            </edge>
-            <edge source="FeatureExtractorConcurrent" target="java.lang.Runnable">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="weka.classifiers.Evaluation" target="weka.core.RevisionHandler">
-              <point x="-25.0" y="-14.5" />
-              <point x="137.0" y="54.0" />
-              <point x="96.75" y="54.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="AuthorClassificationRelaxed" target="weka.classifiers.Evaluation">
-              <point x="46.75" y="-14.5" />
-              <point x="307.25" y="212.0" />
-              <point x="279.5" y="212.0" />
-              <point x="279.5" y="133.0" />
-              <point x="195.33333333333334" y="133.0" />
-              <point x="33.33333333333334" y="14.5" />
-            </edge>
-            <edge source="RelaxedEvaluation" target="weka.classifiers.Evaluation">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="weka.classifiers.Evaluation" target="weka.core.Summarizable">
-              <point x="25.0" y="-14.5" />
-              <point x="187.0" y="54.0" />
-              <point x="239.75" y="54.0" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="WholeWordIndexFinder" target="IndexWrapper">
-              <point x="0.0" y="-14.5" />
-              <point x="0.0" y="14.5" />
-            </edge>
-            <edge source="AuthorClassification" target="RelaxedEvaluation">
-              <point x="36.75" y="-14.5" />
-              <point x="110.25" y="212.0" />
-              <point x="127.0" y="212.0" />
-              <point x="-35.0" y="14.5" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.0" x="180.0" y="375.0" />
-          <SelectedNodes>
-            <node>FeatureCalculators</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/java-1.8.0-openjdk-amd64/jre/lib/rt.jar!/java/io/FilenameFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/AuthorAttributionDemo.java" />
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/AuthorAttribution.java" />
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/util/ClassifierUtils.java">
@@ -1417,7 +1517,7 @@
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/Util.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="473">
-          <caret line="659" column="44" lean-forward="true" selection-start-line="659" selection-start-column="44" selection-end-line="659" selection-end-column="44" />
+          <caret line="659" column="44" lean-forward="false" selection-start-line="659" selection-start-column="44" selection-end-line="659" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -1425,7 +1525,7 @@
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/WholeWordIndexFinder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+          <caret line="19" column="68" lean-forward="false" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1459,7 +1559,7 @@
     <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureCalculators.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
-          <caret line="136" column="0" lean-forward="true" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
           <folding>
             <element signature="e#3016#3024#0" expanded="true" />
             <element signature="e#8355#8356#0" expanded="true" />
@@ -1473,56 +1573,75 @@
         <state relative-caret-position="-1619">
           <caret line="25" column="46" lean-forward="true" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
           <folding>
-            <element signature="docComment;class#MergeArffFiles#0" expanded="true" />
+            <element signature="docComment;class#MergeArffFiles#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="38" column="105" lean-forward="false" selection-start-line="38" selection-start-column="105" selection-end-line="38" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Authorship_Attribution/demo/AuthorAttributionDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
+        <state relative-caret-position="224">
           <caret line="16" column="109" lean-forward="false" selection-start-line="16" selection-start-column="109" selection-end-line="16" selection-end-column="109" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/MergeArffFilesNew.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="40" column="24" lean-forward="false" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/Driver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
-          <caret line="23" column="110" lean-forward="false" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
+          <caret line="23" column="113" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="113" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/FileProcess.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="53" column="146" lean-forward="false" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#FeatureExtractor#0" expanded="true" />
-            <marker date="1498436890513" expanded="false" signature="13607:13615" ph="&lt;~&gt;" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CodeStylometry/Naive Baseline/src/LineFIx.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
+        <state relative-caret-position="140">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="62" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;class#LineFIx#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FeatureExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="56" column="138" lean-forward="false" selection-start-line="56" selection-start-column="138" selection-end-line="56" selection-end-column="138" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#FeatureExtractor#0" expanded="true" />
+            <marker date="1498443583112" expanded="false" signature="13608:13616" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CodeStylometry/SCAA/src/FileProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="52" column="44" lean-forward="false" selection-start-line="52" selection-start-column="44" selection-end-line="52" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#FileProcess#0" expanded="true" />
           </folding>
         </state>
       </provider>

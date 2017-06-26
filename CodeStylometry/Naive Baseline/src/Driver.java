@@ -21,9 +21,9 @@ public class Driver
 		args[1] ="/Users/Aylin/Desktop/Drexel/2014/ARLInternship/SCAAarffs/mallory_150/malloryDataset_andrew_"+datasetNo+".arff";
                 */
 		String[] arg = new String[2];
-		arg[0] ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/8authors4file/";
+		arg[0] ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
 
-		arg[1] ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4filesNB.arff";
+		arg[1] ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/17authorsYfilesNB.arff";
 
 		(new ARFFFactory4()).makeARFF(arg[0], arg[1]);
 	}

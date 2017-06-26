@@ -10,7 +10,7 @@ var esprima = require('esprima');
  , FileList = FileAPI.FileList
  , FileReader = FileAPI.FileReader
  ;
- var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/8authors4file/";
+ var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/7authors4file/";
  var path = require('path');
  var js_files = [];
 
@@ -31,9 +31,7 @@ var esprima = require('esprima');
  
  function processDir(startPath,filter)
  {
-	 	   //var fs = require('fs');
-	 	  //var esprima = require('esprima');
-	 	 //var escope = require('escope');
+	
            if (!fs.existsSync(startPath))
            {
                console.log("no dir ",startPath);
@@ -76,54 +74,26 @@ var esprima = require('esprima');
             	   
             	   var exact_filename = filename_without_path.slice(0, -3);
             	   	 //console.log(exact_filename);
-            	   	   var txt_filename = startPath + '/' + exact_filename + '.txt';
+            	   	   
             	   	//console.log(txt_filename);
             	   	 // var ast_filename = startPath + '/' + exact_filename + '.ast'; 
-            	   
-            	   var fileReader = new FileReader();
+            	    
+                  	
+                  var txt_filename = startPath + '/' + exact_filename + '.txt';
+            	  
+                  var fileReader = new FileReader();
 
                	  fileReader.readAsBinaryString(file, 'utf-8');
             	   //fileReader.readAsBinaryString(file);
-            	   fileReader.onload = function(event) 
+               	  
+               	
+            	   
+               	
+               	FileReader.onload = function(event) 
              	  {
             		  
             		  var contents = fileReader.result;
-            		  //console.log(contents);
             		  
-            		  //content.push(contents); 
-            		  
-            		  
-            		  //var data = JSON.stringify(esprima.parse(contents),null, 4);
-            		  //var data = esprima.parse(contents);
-             	 
-            	   //console.log(filename_without_path);
-            	  
-            	  //console.log(data);
-            	  //console.log(contents);
-            	  //console.log('  ');
-            	  //console.log('*******************************************************************************');
-            	  //console.log('  ');
-            	  
-             	  
-            	  
-            	  // fileReader.onload = function(event) 
-            	  //{
-            	   
-            		   //var contents = fileReader.result; 
-            		   
-            		  //console.log(contents);
-            		   //var fs = require('fs');
-            		   //var data = JSON.stringify(esprima.parse(contents),null, 4);
-            		   //console.log('Done');
-       
-            		   //var filename_without_path = files[i];
-            		   //console.log(filename_without_path);
-            	   	   
-            	   
-            	   //console.log('-- found: ',filename);
-                   //console.log(i, filename_without_path);
-                   //console.log(i, exact_filename);
-            	   	//console.log('Done');
                    fs.writeFile(txt_filename, contents, function(error)
            	    	 	{
            	    	 		if(error)
@@ -314,6 +284,3 @@ var esprima = require('esprima');
  
 //console.log(ast);
 //console.log('Done');
-
-
-

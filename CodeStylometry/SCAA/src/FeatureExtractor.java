@@ -49,12 +49,12 @@ public class FeatureExtractor
 		       		for(numberFiles = 1 ; numberFiles < 2; numberFiles++)
 		       		{
 		       			
-		       			FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff"), "");
+		       			FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/17authorsYfiles.arff"), "");
 		       			
-		       			String output_filename =  "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff" ;
+		       			String output_filename =  "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/17authorsYfiles.arff" ;
 		    			
 		       			
-		       			String test_dir = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/8authors4file/";
+		       			String test_dir = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
 
 
 		    			List test_file_paths = Util.listTextFiles(test_dir);
@@ -258,8 +258,9 @@ public class FeatureExtractor
 		authorFileName= new File(test_file_paths.get(i).toString());
 		String authorName= authorFileName.getParentFile().getName();
 
-		//System.out.println(i +" -th file: "+test_file_paths.get(i));
-		//System.out.println("authorname: "+authorName);
+		System.out.println("authorname: "+authorName);
+		System.out.println(i +" -th file: "+test_file_paths.get(i));
+
 		//System.out.println(test_file_paths.get(i));
 		//System.out.println(authorName);
 
