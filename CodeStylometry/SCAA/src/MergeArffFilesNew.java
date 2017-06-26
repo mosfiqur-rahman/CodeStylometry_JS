@@ -36,19 +36,12 @@ public class MergeArffFilesNew {
     public static void main(String[] args) throws Exception{
     	 
 
-            String file1 ="/Users/Aylin/Desktop/Princeton/BAA/arffs/"
+            String file2 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4files.arff";
 
-            + "C_62Authors14files_decompiledNEW.arff";
+            String file1 ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/2authors4filesNB.arff";
 
-            String file2 ="/Users/Aylin/Desktop/Princeton/BAA/arffs/"
-
-         //   + "merged/C_62Authors14files_original_C++.arff";
-                    + "62authors14FilesUsenixAndrewFeatures.arff";
-
-
-            String outputArffName ="/Users/Aylin/Desktop/Princeton/BAA/arffs/merged/"
-
-            + "C_62Authors14files_decompiledPlusOriginal.arff";
+	        FileUtils.write(new File( "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff"), "");
+            String outputArffName ="/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/mixed.arff";
 
            
 
@@ -68,27 +61,33 @@ public class MergeArffFilesNew {
 				String name=instances.attribute(att).name();
 				name.replace("$", "dollarsign");
 			    	String arr[] = name.split("\n", 10);
-		   	 		if(arr.length>1){
+		   	 		if(arr.length>1)
+		   	 		{
 		   	 			name="";
 		   	 			int splits = arr.length;
-		   	 					for(int i =0; i<splits; i++){
-		   	 					name = name + arr[i]	;
-		   	 					}
+                        for(int i =0; i<splits; i++)
+                        {
+                            name = name + arr[i]	;
+                        }
 			
 		   	 		}
 								
 				if(instances.attribute(att).isNumeric()){
 					type="numeric";
 				}
-				if(instances.attribute(att).isNominal()){
+				if(instances.attribute(att).isNominal())
+				{
 					type="nominal";
 					Enumeration vals = instances.attribute(att).enumerateValues();
-					while(vals.hasMoreElements()){
-					attValues = attValues + vals.nextElement().toString();
-					attValues = attValues + ", ";}
+					while(vals.hasMoreElements())
+					{
+						attValues = attValues + vals.nextElement().toString();
+						attValues = attValues + ", ";
+					}
 				}
 			
-				if(instances.attribute(att).isString()){
+				if(instances.attribute(att).isString())
+				{
 					type="string";
 				}
 	
@@ -177,7 +176,7 @@ public class MergeArffFilesNew {
 
 			if(instances2.instance(j).stringValue(0).contains(instances.instance(i).stringValue(0)))
 					{
-		        System.out.println(i+" \n"); 
+		        //System.out.println(i+" \n");
 
 
 				Util.writeFile(instances.instance(i)

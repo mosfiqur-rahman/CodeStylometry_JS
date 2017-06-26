@@ -64,7 +64,8 @@ public class FeatureExtractor
 		    			String text = "";
 		    			// first specify relation
 		    			
-		    			Util.writeFile("@relation " + numberFiles + "  JS_dataset "  + numberFiles + "\n" + "\n", output_filename, true);
+		    			//Util.writeFile("@relation " + numberFiles + "  JS_dataset "  + numberFiles + "\n" + "\n", output_filename, true);
+				        Util.writeFile("@relation JS_CodeStylometry_test" + "\n" + "\n", output_filename, true);
 		    			Util.writeFile("@attribute instanceID {",  output_filename, true);
 		    			
 		    			List  test_JS_paths = Util.listJSFiles(test_dir);
@@ -105,15 +106,17 @@ public class FeatureExtractor
     	//matches .dep files in test_dir for unique patterns matching regex "([\\w']+)"
 
 		String[] ASTtypes = FeatureCalculators.uniqueJSDepASTTypes(test_dir);
+
 		//System.out.println(ASTtypes);
 		//matches .js files for everything that appears only once (whitespace as seperator)
 
 		String[] wordUnigramsJS =FeatureCalculators.wordUnigramsJS(test_dir);
+
 		//System.out.println(ASTNodeBigrams);
 
        String[] ASTNodeBigrams = BigramExtractor.getJSASTNodeBigrams(test_dir);
        //System.out.println(ASTNodeBigrams);
-    
+
        for(int i = 0 ; i < APIsymbols.length ; i++)
 		{
 			{
@@ -142,10 +145,11 @@ public class FeatureExtractor
 		{
 			{
 				ASTtypes[i] = ASTtypes[i].replace("'", "apostrophesymbol");
-				Util.writeFile("@attribute 'ASTTypeTFIDF "+i+"=["+ASTtypes[i]+"] ' numeric" + "\n", output_filename, true);
+				Util.writeFile("@attribute 'ASTTypeTFIDF "+i+"=["+ASTtypes[i]+"]' numeric" + "\n", output_filename, true);
 			}
 		}
 
+				       // System.out.print(ASTNodeBigrams.length);
 		for(int i = 0 ; i < ASTNodeBigrams.length ; i++)
 		{
 			{
@@ -161,7 +165,7 @@ public class FeatureExtractor
         				Util.writeFile("@attribute 'wordUnigramsTF "+i+"=["+wordUnigramsJS[i]+"]' numeric"+"\n", output_filename, true);
 			}
 		}		
-    	  
+
 		for(int i = 0 ; i < ASTtypes.length ; i++)
 		{
 			{
@@ -274,7 +278,7 @@ public class FeatureExtractor
 
 		Util.writeFile(FeatureCalculators.CFGNodeCount(ASTText)+",", output_filename, true);
 		Util.writeFile(FeatureCalculators.ASTFunctionIDCount(ASTText)+",", output_filename, true);
-		Util.writeFile(DepthASTNode.getJSMaxDepthASTLeaf(DepASTText, ASTtypes)+",", output_filename, true);
+		Util.writeFile(DepthASTNode.getJSMaxDepthASTLeaf(ASTText, ASTtypes)+",", output_filename, true);
 
 		//Separated :		
 		Util.writeFile(FeatureCalculators.averageASTDepth(ASTText)+",", output_filename, true);
@@ -324,7 +328,7 @@ public class FeatureExtractor
 		//Get count of each wordUnigram in JS source file	 
 		float[] wordUniCount = FeatureCalculators.WordUnigramTF(sourceCode, wordUnigramsJS);
 
-		for (int j=0; j<wordUniCount.length; j++)
+		for (int j=0; j<wordUnigramsJS.length; j++)
 		{
 			Util.writeFile(wordUniCount[j] +",", output_filename, true);
 		}	
@@ -347,17 +351,17 @@ public class FeatureExtractor
 
 		float [] depFeature =DepthASTNode.getJSAvgDepthASTNode(DepASTText,ASTtypes);
 
-			for(int k=0;k<depFeature.length;k++)
+			for(int k=0;k<ASTtypes.length;k++)
 		{
 			Util.writeFile(depFeature[k] +",", output_filename, true);
 		}	
 
 		float [] JSKeywordsTF =FeatureCalculators.getJSKeywordsTF(sourceCode);
 
-		for(int k=0;k<JSKeywordsTF.length;k++)
+		for(int k=0;k<JSKeywords.length;k++)
 		{
 			Util.writeFile(JSKeywordsTF[k] +",", output_filename, true);
-		}	
+		}
 
 
 		Util.writeFile(authorName+"\n", output_filename, true);

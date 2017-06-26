@@ -1,4 +1,4 @@
-@relation 1  JS_dataset 1
+@relation 1_JS_dataset_1
 
 @attribute instanceID {dijkstra.js,pancakes.js,standing_ovation.js,standing_ovation1.js,code.js,code1.js,code2.js,code3.js,problem_b.js,problem_c.js,program.js,program1.js,dijkstra.js,pc3.js,so.js,so1.js,codejam.js,proba.js,probb.js,probc1.js,index.js,index1.js,index2.js,index3.js,problemA.js,problemA1.js,problemB.js,problemC.js} 
 @attribute 'functionIDCount' numeric

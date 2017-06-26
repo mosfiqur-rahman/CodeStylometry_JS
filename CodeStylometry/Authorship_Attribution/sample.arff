@@ -1,0 +1,49 @@
+@relation JS_CodeStylometry_test
+
+@attribute instanceID {dijkstra1.js,pancakes.js,standing_ovation.js,standing_ovation1.js,code.js,code1.js,code2.js,code3.js,problem_b.js,problem_c.js,program.js,program1.js,dijkstra.js,pc3.js,so.js,so1.js,codejam.js,proba.js,probb.js,probc1.js,index.js,index1.js,index2.js,index3.js,problemA.js,problemA1.js,problemB.js,problemC.js} 
+@attribute 'functionIDCount' numeric
+@attribute 'CFGNodeCount' numeric
+@attribute 'ASTFunctionIDCount' numeric
+@attribute 'getMaxDepthASTLeaf' numeric
+@attribute 'AverageASTDepth' numeric
+@attribute 'ASTTypeTF 0=[Null]' numeric
+@attribute 'ASTTypeTF 1=[
+nameproto]' numeric
+@attribute 'ASTTypeTF 2=[BlockStatement]' numeric
+@attribute 'ASTTypeTF 3=[UnaryExpression]' numeric
+@attribute 'ASTTypeTF 4=[WhileStatement]' numeric
+@attribute 'ASTTypeTF 5=[String]' numeric
+@attribute 'ASTTypeTF 6=[VariableDeclarator]' numeric
+@attribute 'ASTTypeTF 7=[IfStatement]' numeric
+@attribute 'ASTTypeTF 8=[FunctionDeclaration]' numeric
+@attribute 'ASTTypeTF 9=[Logical
+Expression]' numeric
+@attribute 'ASTTypeTF 10=[Numeric]' numeric
+@attribute 'ASTTypeTF 11=[ThisExpression]' numeric
+@attribute 'ASTTypeTF 12=[Identifier]' numeric
+@attribute 'ASTTypeTF 13=[FunctionExpression]' numeric
+@attribute 'ASTTypeTF 14=[BinaryExpression]' numeric
+@attribute 'ASTTypeTF 15=[AssignmentExpression]' numeric
+@attribute 'ASTTypeTF 16=[TryStatement]' numeric
+
+
+@attribute 'wordUnigramsTF 980=[left]' numeric
+@attribute 'wordUnigramsTF 981=["−k]' numeric
+@attribute 'wordUnigramsTF 982=[characters]' numeric
+@attribute 'wordUnigramsTF 983=[_val.j,]' numeric
+@attribute 'wordUnigramsTF 984=["+result);]' numeric
+@attribute 'wordUnigramsTF 985=[throw]' numeric
+@attribute 'wordUnigramsTF 986=[if(depth>maxdepth)]' numeric
+@attribute 'wordUnigramsTF 987=[apostrophesymbolresultapostrophesymbol,]' numeric
+@attribute 'wordUnigramsTF 988=[len,]' numeric
+@attribute 'wordUnigramsTF 989=[len)]' numeric
+@attribute 'wordUnigramsTF 990=[left==goal]' numeric
+@attribute 'wordUnigramsTF 991=[sliceTop2(scenario.plates);]' numeric
+@attribute 'wordUnigramsTF 992=[[];]' numeric
+@attribute 'wordUnigramsTF 993=[peopleInvited++;]' numeric
+@attribute 'wordUnigramsTF 994=[for(var]' numeric
+@attribute 'wordUnigramsTF 995=[s.length]' numeric
+@attribute 'authorName' {azenyem,mwsam,dobuki,dushanr,entertainyou,vskarine,jimbly}
+
+@data
+
