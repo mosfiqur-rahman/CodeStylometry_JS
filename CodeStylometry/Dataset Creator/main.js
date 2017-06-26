@@ -10,7 +10,7 @@ var esprima = require('esprima');
  , FileList = FileAPI.FileList
  , FileReader = FileAPI.FileReader
  ;
- var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/7authors4file/";
+ var loc = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/";
  var path = require('path');
  var js_files = [];
 
@@ -80,7 +80,7 @@ var esprima = require('esprima');
             	    
                   	
                   var txt_filename = startPath + '/' + exact_filename + '.txt';
-            	  
+                  //console.log(txt_filename);
                   var fileReader = new FileReader();
 
                	  fileReader.readAsBinaryString(file, 'utf-8');
@@ -89,10 +89,11 @@ var esprima = require('esprima');
                	
             	   
                	
-               	FileReader.onload = function(event) 
+               	fileReader.onload = function(event) 
              	  {
             		  
             		  var contents = fileReader.result;
+            		  
             		  
                    fs.writeFile(txt_filename, contents, function(error)
            	    	 	{
@@ -101,10 +102,10 @@ var esprima = require('esprima');
            	    	 				console.error("write error: " + error.message);
            	    	 			}
            	    	 		//console.log('1');
-           	    	 	//	else
-           	    	 	//		{
-           	    	 	//			console.log("successful write to " + txt_filename);
-           	    	 	//		}
+           	    	 		else
+           	    	 			{
+           	    	 				console.log("successful write to " + txt_filename);
+           	    	 			}
            	    	 	});
            	 
  /*          	 fs.writeFile(ast_filename, data, function(error)
@@ -182,7 +183,7 @@ var esprima = require('esprima');
         		  
         		  //console.log(contents);
         		  //console.log('*****************');
-        		  console.log(ast_filename);
+        		  //console.log(ast_filename);
         		  fs.writeFile(ast_filename, data, function(error)
         	           	 	{
         	           	 		if(error)

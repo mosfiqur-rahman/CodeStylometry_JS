@@ -18,7 +18,7 @@ public class AuthorAttributionDemo {
 				testName = null, resultName = "/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final_result.txt";
 		boolean cv = false;
 		//int minSeed = 0, numFolds = 0, maxSeed = 0, numSeeds = 0;
-		int minSeed = 1, numFolds = 4, maxSeed = 3, numSeeds = 3;
+		int minSeed = 1, numFolds = 9, maxSeed = 6, numSeeds = 6;
 		AuthorAttribution aa;
 		String resultString = null;
 		String resultStringArray[] = null;

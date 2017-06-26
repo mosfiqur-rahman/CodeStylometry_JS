@@ -22,17 +22,6 @@ public class LineFIx
 		{
 			String line = scan.nextLine();
 			word_list .add(line);
-
-			/*
-			if (line.equals(match))
-			{
-				break;
-			}
-			else
-			{
-				word_list .add(line);
-			}
-			*/
 		}
 
 		//System.out.println(word_list);
@@ -55,19 +44,21 @@ public class LineFIx
 					}
 					else
 					{
-						String temp = word_list.get(i-1) + word_list.get(i);
-						word_list.set(i, temp);
-						word_list.remove(i-1);
 						//System.out.println(store);
+						String temp = word_list.get(i-1) + word_list.get(i);
+						word_list.set(i-1, temp);
+						word_list.remove(i);
+						i--;
+
 						continue;
 					}
 				}
 			}
 		}
-
+		
 		try
 		{
-			PrintWriter writer = new PrintWriter("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final.arff", "UTF-8");
+			PrintWriter writer = new PrintWriter("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Authorship_Attribution/final.arff");
 
 			for (int i = 0; i < word_list.size(); i++)
 			{

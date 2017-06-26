@@ -10,17 +10,13 @@ import org.apache.commons.io.filefilter.TrueFileFilter;
  */
 public class FileProcess
 {
-	private static File[] filess;
 	public  static void main(String [] args) throws IOException
 	{
-		File dir = new File("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/7authors4file/");
+		File dir = new File("/home/xps/Documents/CodeStylometry_JS/CodeStylometry/Dataset Creator/js_dataset/17authorsYfiles/");
 
 		//System.out.println("Getting all files in " + dir.getCanonicalPath() + " including those in subdirectories");
 
-		List<File> files = new ArrayList<>();
-		files = (List<File>) FileUtils.listFiles(dir, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
-
-		List<String> file_list = new ArrayList<>();
+		List<File> files = (List<File>) FileUtils.listFiles(dir, TrueFileFilter.INSTANCE, TrueFileFilter.INSTANCE);
 
 		///File[] file_list;
 
@@ -31,37 +27,21 @@ public class FileProcess
 			//file_list[counter] = file;
 			//counter++;
 
-			/*
+
 			String temp_str = temp.substring(temp.length() - 3);
+
 			if(temp_str.equals(".js"))
 			{
-				File f = file;
-				f.renameTo(new File(temp_str + counter + ".js"));
+				String main_filename = temp.substring(0, temp.length() - 3);
+				//System.out.println(file.getName());
+				//System.out.println(file.isFile());
+
+				boolean b = file.renameTo(new File(main_filename + "***" + counter + ".js"));
 				//System.out.println(file.getCanonicalPath());
+				System.out.println(b);
+				counter++;
 			}
-			*/
-			file_list.add(temp);
-			//System.out.println("file: " + file.getCanonicalPath());
 		}
 
-		for (int i = 0; i < file_list.size(); i++)
-		{
-
-			//File f = new File(file_list.get(i));
-			//filess[i] = f;
-
-			String temp_filename = file_list.get(i);
-			String temp_str = temp_filename.substring(temp_filename.length() - 3);
-			//System.out.println(file_list.get(i));
-			String main_filename = temp_filename.substring(0, temp_filename.length() - 3);
-			if(temp_str.equals(".js"))
-			{
-				File f = new File(temp_filename);
-				f.renameTo(new File(main_filename + i + ".js"));
-
-				//System.out.println(main_filename);
-			}
-
-		}
 	}
 }

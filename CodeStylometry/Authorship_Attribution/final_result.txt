@@ -1,30 +1,60 @@
-4 folds, seed 1: 
-Correctly Classified Instances          27               96.4286 %
-Incorrectly Classified Instances         1                3.5714 %
-Kappa statistic                          0.9583
-Mean absolute error                      0.1287
-Root mean squared error                  0.201 
-Relative absolute error                 52.5445 %
-Root relative squared error             57.439  %
-Total Number of Instances               28     
+9 folds, seed 1: 
+Correctly Classified Instances         239               98.7603 %
+Incorrectly Classified Instances         3                1.2397 %
+Kappa statistic                          0.9868
+Mean absolute error                      0.0323
+Root mean squared error                  0.0853
+Relative absolute error                 29.2339 %
+Root relative squared error             36.294  %
+Total Number of Instances              242     
 
-4 folds, seed 2: 
-Correctly Classified Instances          27               96.4286 %
-Incorrectly Classified Instances         1                3.5714 %
-Kappa statistic                          0.9583
-Mean absolute error                      0.1316
-Root mean squared error                  0.2047
-Relative absolute error                 53.7453 %
-Root relative squared error             58.4864 %
-Total Number of Instances               28     
+9 folds, seed 2: 
+Correctly Classified Instances         240               99.1736 %
+Incorrectly Classified Instances         2                0.8264 %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0311
+Root mean squared error                  0.0812
+Relative absolute error                 28.1736 %
+Root relative squared error             34.5526 %
+Total Number of Instances              242     
 
-4 folds, seed 3: 
-Correctly Classified Instances          27               96.4286 %
-Incorrectly Classified Instances         1                3.5714 %
-Kappa statistic                          0.9583
-Mean absolute error                      0.1297
-Root mean squared error                  0.2029
-Relative absolute error                 52.958  %
-Root relative squared error             57.9695 %
-Total Number of Instances               28     
+9 folds, seed 3: 
+Correctly Classified Instances         240               99.1736 %
+Incorrectly Classified Instances         2                0.8264 %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0333
+Root mean squared error                  0.0865
+Relative absolute error                 30.1165 %
+Root relative squared error             36.7854 %
+Total Number of Instances              242     
+
+9 folds, seed 4: 
+Correctly Classified Instances         240               99.1736 %
+Incorrectly Classified Instances         2                0.8264 %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0315
+Root mean squared error                  0.0822
+Relative absolute error                 28.526  %
+Root relative squared error             34.9793 %
+Total Number of Instances              242     
+
+9 folds, seed 5: 
+Correctly Classified Instances         240               99.1736 %
+Incorrectly Classified Instances         2                0.8264 %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0328
+Root mean squared error                  0.0855
+Relative absolute error                 29.6693 %
+Root relative squared error             36.3473 %
+Total Number of Instances              242     
+
+9 folds, seed 6: 
+Correctly Classified Instances         240               99.1736 %
+Incorrectly Classified Instances         2                0.8264 %
+Kappa statistic                          0.9912
+Mean absolute error                      0.0322
+Root mean squared error                  0.084 
+Relative absolute error                 29.0991 %
+Root relative squared error             35.7195 %
+Total Number of Instances              242     
 
